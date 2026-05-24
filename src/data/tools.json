@@ -1,0 +1,26 @@
+[
+  {
+    "id": "chatgpt",
+    "name": "ChatGPT (OpenAI)",
+    "url": "https://chat.openai.com",
+    "educationalUse": "Excelente para conversação geral, explicações passo a passo e brainstorming de ideias para trabalhos escolares."
+  },
+  {
+    "id": "claude",
+    "name": "Claude (Anthropic)",
+    "url": "https://claude.ai",
+    "educationalUse": "Muito forte em análise de textos longos, interpretação de PDFs (artigos científicos) e redação com tom mais humano e ético."
+  },
+  {
+    "id": "gemini",
+    "name": "Gemini (Google)",
+    "url": "https://gemini.google.com",
+    "educationalUse": "Integrado ao ecossistema Google, possui acesso fácil à internet em tempo real para pesquisas e atualidades (bom para vestibulares)."
+  },
+  {
+    "id": "perplexity",
+    "name": "Perplexity AI",
+    "url": "https://www.perplexity.ai",
+    "educationalUse": "Funciona como um motor de busca avançado que sempre cita as fontes da informação. Fundamental para pesquisas escolares e combate a alucinações."
+  }
+]

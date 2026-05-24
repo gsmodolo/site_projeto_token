@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(npm *)",
+      "PowerShell(npm install *)",
+      "PowerShell(npm run *)",
+      "PowerShell($machinePath = [Environment]::GetEnvironmentVariable\\(\"Path\", \"Machine\"\\); $userPath = [Environment]::GetEnvironmentVariable\\(\"Path\", \"User\"\\); $env:Path = \"$machinePath;$userPath\"; try { npx playwright --version } catch { \"playwright not found\" })",
+      "PowerShell(npm i *)",
+      "PowerShell($machinePath = [Environment]::GetEnvironmentVariable\\(\"Path\", \"Machine\"\\); $userPath = [Environment]::GetEnvironmentVariable\\(\"Path\", \"User\"\\); $env:Path = \"$machinePath;$userPath\"; npx playwright install chromium)",
+      "PowerShell(New-Item *)",
+      "PowerShell($machinePath = [Environment]::GetEnvironmentVariable\\(\"Path\", \"Machine\"\\); $userPath = [Environment]::GetEnvironmentVariable\\(\"Path\", \"User\"\\); $env:Path = \"$machinePath;$userPath\"; node screenshot.mjs http://localhost:5173)",
+      "PowerShell($machinePath = [Environment]::GetEnvironmentVariable\\(\"Path\", \"Machine\"\\); $userPath = [Environment]::GetEnvironmentVariable\\(\"Path\", \"User\"\\); $env:Path = \"$machinePath;$userPath\"; node screenshot.mjs http://localhost:5173/banco-de-prompts)",
+      "PowerShell($machinePath = [Environment]::GetEnvironmentVariable\\(\"Path\", \"Machine\"\\); $userPath = [Environment]::GetEnvironmentVariable\\(\"Path\", \"User\"\\); $env:Path = \"$machinePath;$userPath\"; node screenshot.mjs http://localhost:5173/ferramentas)"
+    ]
+  }
+}

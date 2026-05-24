@@ -1,0 +1,72 @@
+[
+  {
+    "id": "vest-01",
+    "category": "Vestibulares",
+    "title": "Corretor de Redação",
+    "description": "Receba notas detalhadas e tabela de erros baseada nos critérios da banca.",
+    "promptText": "Atue como um corretor rigoroso da banca corretora da [instituição/vestibular/prova]. Avalie a redação abaixo sobre o tema \"[tema da redação]\". Me dê uma nota detalhada seguindo os critérios oficiais da banca e, no final, crie uma tabela apontando os maiores erros que cometi ao longo do texto. Siga este exemplo para a tabela: 'Erro: Falta de vírgula na linha 4 | Como melhorar: Isolar o adjunto adverbial deslocado'."
+  },
+  {
+    "id": "vest-02",
+    "category": "Vestibulares",
+    "title": "Simulador de Questões Inéditas",
+    "description": "Gere novas questões de múltipla escolha no exato estilo do seu vestibular.",
+    "promptText": "Aja como o examinador-chefe da prova da [instituição/vestibular/prova]. Crie [número] questões inéditas de múltipla escolha sobre [tópico] no exato estilo de enunciado e nível de dificuldade dessa prova. Siga estas regras:\n1. As questões não devem ser cópias de provas anteriores;\n2. Distribua a dificuldade: [número] fáceis, [número] médias e [número] complexas;\n3. Inclua textos base, gráficos ou tabelas quando pertinente.\nForneça o gabarito comentado apenas no final, mostrando a lógica de cada resposta e apontando 'pegadinhas' comuns."
+  },
+  {
+    "id": "vest-03",
+    "category": "Vestibulares",
+    "title": "Sugestão de Repertório Sociocultural",
+    "description": "Encontre filmes, livros e filósofos que se encaixem no seu tema de redação.",
+    "promptText": "O tema de redação que estou treinando é \"[tema]\". Me dê 3 sugestões de repertório sociocultural (filmes, livros, citações de filósofos ou fatos históricos) que se conectem DIRETAMENTE com esse tema. Para cada um, explique seu raciocínio de como eu poderia encaixá-lo logicamente no desenvolvimento da redação."
+  },
+  {
+    "id": "vest-04",
+    "category": "Vestibulares",
+    "title": "Análise de Obras Literárias",
+    "description": "Obtenha análises focadas no que os vestibulares mais cobram.",
+    "promptText": "Vou prestar o vestibular da [instituição]. Resuma os pontos mais cobrados da obra literária \"[nome do livro]\" de [autor]. Crie tópicos focando nas características do movimento literário da obra, no perfil psicológico dos personagens principais e em como esse livro dialoga com o contexto histórico da época."
+  },
+  {
+    "id": "vest-05",
+    "category": "Vestibulares",
+    "title": "Estrategista de Tempo de Prova",
+    "description": "Distribua seu tempo inteligentemente durante as horas de exame.",
+    "promptText": "Tenho muita dificuldade com o controle do tempo no simulado do(a) [vestibular/prova]. A prova tem [número] questões de [disciplinas], uma redação, e dura [tempo total] horas. Crie uma estratégia de prova para mim. Me diga por qual disciplina começar, quanto tempo máximo gastar por questão, em que momento estratégico eu devo rascunhar e passar a redação a limpo."
+  },
+  {
+    "id": "vest-06",
+    "category": "Vestibulares",
+    "title": "Conselheiro de Estudos Pós-Prova",
+    "description": "Descubra os padrões dos seus erros após realizar simulados.",
+    "promptText": "Acabei de fazer um simulado de [matéria/prova] e errei muitas questões de bobeira. Acertei [número de acertos] de [número total]. Aja como um treinador de alta performance. Faça-me perguntas investigativas, uma a uma, para descobrir a causa raiz dos meus erros (se foi falta de atenção, falta de base teórica, ansiedade ou cansaço). Após descobrir o padrão, me dê 3 estratégias táticas para eu não cometer os mesmos erros no próximo simulado."
+  },
+  {
+    "id": "vest-07",
+    "category": "Vestibulares",
+    "title": "Mapeador de Carreiras e Interesses",
+    "description": "Combine seus gostos e aversões para encontrar profissões ideais.",
+    "promptText": "Estou no ensino médio e não sei o que cursar na faculdade. Eu sou muito bom em [habilidades, ex: matemática e liderar equipes] e gosto muito de [hobbies/interesses, ex: videogames, robótica e esportes]. Por outro lado, eu odeio [coisas que não gosta, ex: rotina repetitiva e memorizar textos longos]. Aja como um conselheiro vocacional. Me sugira 5 profissões diferentes que unem esses interesses (inclua carreiras tradicionais e carreiras novas/tecnológicas). Para cada uma, explique detalhadamente por que ela combina com meu perfil."
+  },
+  {
+    "id": "vest-08",
+    "category": "Vestibulares",
+    "title": "Guia de Preparação para Vestibular",
+    "description": "Descubra dicas de ex-alunos que passaram no curso dos seus sonhos.",
+    "promptText": "Meu grande objetivo é passar no vestibular de [curso, ex: Engenharia Elétrica/Medicina] na [instituição]. Atue como um veterano desse curso que passou em primeiro lugar. Me conte: 1) Quais são as matérias do ensino médio que eu mais vou usar na faculdade e devo focar agora? 2) Quais são os mitos sobre esse curso que eu não devo acreditar? 3) Me dê uma dica de ouro de como você organizava seu tempo de estudo na minha idade."
+  },
+  {
+    "id": "vest-09",
+    "category": "Vestibulares",
+    "title": "Treino de Argumentação",
+    "description": "Pratique redação tentando refutar argumentos lógicos contrários.",
+    "promptText": "Quero treinar minha capacidade de argumentação para a redação do Enem e para debates. Meu posicionamento sobre [tema polêmico] é que [sua opinião/tese]. Atue como “Advogado”. Apresente os 3 argumentos contrários mais fortes, lógicos e baseados em dados contra a minha tese. O objetivo não é brigar, mas me forçar a pensar em como refutar esses pontos na minha redação."
+  },
+  {
+    "id": "vest-10",
+    "category": "Vestibulares",
+    "title": "Plano de Leitura Obrigatória",
+    "description": "Divida livros cansativos com incentivos diários.",
+    "promptText": "Preciso ler a obra [nome do livro] para o vestibular, mas a linguagem é muito antiga e eu perco o foco. Atue como um influenciador digital focado em literatura (booktuber). Crie um plano de leitura engajante para eu terminar o livro em [número] dias. Para cada dia do cronograma, estabeleça a meta de capítulos e me dê um 'spoiler sem contexto' ou um 'motivo fofoca' do que vai acontecer nesses capítulos para me deixar com vontade de ler."
+  }
+]

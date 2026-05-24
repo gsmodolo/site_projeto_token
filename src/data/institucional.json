@@ -1,0 +1,50 @@
+{
+  "about": {
+    "title": "Projeto IAgora: Letramento em IA para o Futuro",
+    "description": "Uma iniciativa da IEEE Computer Society - USP São Carlos, o Projeto IAgora tem como missão democratizar o letramento em Inteligência Artificial Generativa para estudantes, do ensino básico ao superior, e profissionais. Por meio de uma abordagem leve e didática, apresentamos desde o funcionamento das Redes Neurais e LLMs 'por baixo dos panos' até a aplicação prática da Engenharia de Prompt, com muitos exemplos do dia-a-dia. Utilizando técnicas de Engenharia de Prompt como o T.I.C. e exemplos lúdicos, focamos em capacitar a sociedade para o uso ético, eficiente e consciente dessas tecnologias no cotidiano e no mercado de trabalho.",
+    "impact": "Transformamos a IA de um conceito distante em uma ferramenta prática de alto impacto. Recentemente, levamos nossa imersão a mais de 150 alunos da ETEC de São Carlos, do Colégio Uni e da FATEC. O resultado foi imediato: estudantes dominando a criação de prompts e utilizando a tecnologia para potencializar os próprios estudos. Sempre guiados pelo feedback do público das apresentações, provamos que o letramento em IA é uma necessidade palpável que gera engajamento real na educação."
+  },
+  "contact": {
+    "callToAction": "Deseja levar nossa equipe para sua organização? Agende uma visita institucional!",
+    "email": "csuspsaocarlos@gmail.com",
+    "instagram": "https://instagram.com/csuspsc"
+  },
+  "impactSection": {
+    "label": "Impacto real",
+    "heading": "Mais de 150 alunos já capacitados",
+    "description": "Estudantes de ETEC, Fatec e Colégio Uni transformando IA em ferramenta de estudo — e o site existe para escalar exatamente esse impacto presencial.",
+    "galleryHeading": "Nossas visitas",
+    "testimonialsHeading": "O que os alunos dizem"
+  },
+  "gallery": [
+    { "src": "/fotos_visitas/1_etec.jpg",  "alt": "Visita institucional ETEC" },
+    { "src": "/fotos_visitas/2_etec.jpg",  "alt": "Visita institucional ETEC" },
+    { "src": "/fotos_visitas/3_etec.jpg",  "alt": "Visita institucional ETEC — grupo completo" },
+    { "src": "/fotos_visitas/4_etec.jpg",  "alt": "Visita institucional ETEC" },
+    { "src": "/fotos_visitas/5_etec.jpg",  "alt": "Visita institucional ETEC" },
+    { "src": "/fotos_visitas/1_fatec.jpg", "alt": "Visita institucional Fatec" },
+    { "src": "/fotos_visitas/2_fatec.jpg", "alt": "Visita institucional Fatec" },
+    { "src": "/fotos_visitas/3_fatec.jpg", "alt": "Visita institucional Fatec" },
+    { "src": "/fotos_visitas/4_fatec.jpg", "alt": "Visita institucional Fatec" },
+    { "src": "/fotos_visitas/1_uni.jpg",   "alt": "Visita institucional Colégio Uni" },
+    { "src": "/fotos_visitas/2_uni.jpg",   "alt": "Visita institucional Colégio Uni" },
+    { "src": "/fotos_visitas/3_uni.jpg",   "alt": "Visita institucional Colégio Uni" },
+    { "src": "/fotos_visitas/uni_3.jpg",   "alt": "Visita institucional Colégio Uni" }
+  ],
+  "testimonials": [
+    {
+      "quote": "Achei a apresentação muito interessante porque explicou de um jeito fácil um assunto que normalmente parece complicado. A parte que eu mais gostei foi entender a diferença entre redes neurais e LLMs, porque antes eu achava que eram praticamente a mesma coisa. Também achei muito legal a explicação sobre prompts e a técnica T.I.C., já que mostrou que a forma como fazemos a pergunta muda bastante a resposta da IA. O exemplo de estequiometria usando o Homem-Aranha deixou a apresentação mais divertida e ajudou muito a entender o conteúdo. Isso fez com que o tema ficasse menos 'pesado' e mais próximo da nossa realidade.",
+      "role": "Aluno(a) Uni",
+      "featured": true
+    },
+    { "quote": "A coisa mais legal foi aprender como a IA pode me auxiliar nos estudos.", "role": "Aluno(a) Uni" },
+    {
+      "quote": "A maneira como é construído um LLM, acredito que não seja algo tão simples, mas foi de fácil entendimento e os meninos usavam sempre exemplos práticos e do dia-a-dia para facilitar.",
+      "role": "Aluno(a) Fatec"
+    },
+    { "quote": "Aprendi como funciona por dentro da inteligência artificial.", "role": "Aluno(a) Fatec" },
+    { "quote": "A importância de colocar o contexto no prompt foi esclarecedor.", "role": "Aluno(a) Uni" },
+    { "quote": "Adorei como agora sei como vou usar uma IA nos meus estudos.", "role": "Aluno(a) Uni" },
+    { "quote": "Como 'guiar' a IA para que ela funcione da melhor forma em cada caso.", "role": "Aluno(a) Fatec" }
+  ]
+}

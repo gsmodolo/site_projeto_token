@@ -1,0 +1,121 @@
+[
+  {
+    "id": "est-01",
+    "category": "Estudos",
+    "title": "Explicação Didática com Analogia",
+    "description": "Receba explicações simples usando referências da cultura pop.",
+    "promptText": "Estou no [série/ano da faculdade] e não consigo entender [tópico da matéria]. Aja como um professor de [disciplina] do [ensino fundamental/ensino médio/faculdade] e me explique esse conceito de forma bem didática usando uma analogia com [série/filme/livro/personagem]. Depois, me dê um exercício simples para testar se eu entendi realmente o conceito."
+  },
+  {
+    "id": "est-02",
+    "category": "Estudos",
+    "title": "Resolução de Exercício Guiada",
+    "description": "Seja guiado passo a passo sem receber a resposta pronta.",
+    "promptText": "Estou resolvendo este problema de [matéria]: [Escrever o problema/Anexar imagem do problema]. Estou tendo dificuldades, pode me ajudar? REGRA IMPORTANTE: Não me dê a resposta final. Em vez disso, aja como um professor e me faça uma pergunta que me force a pensar e descobrir o próximo passo sozinho."
+  },
+  {
+    "id": "est-03",
+    "category": "Estudos",
+    "title": "Cronograma de Estudos",
+    "description": "Organize seu tempo focado no que mais cai nas provas.",
+    "promptText": "Tenho um [simulado/prova] daqui a [tempo restante] sobre [disciplina/foco de estudo]. Eu tenho [tempo disponível] para estudar. Crie um cronograma diário para mim, focando nos tópicos que estatisticamente mais caem na prova. Formate a resposta em uma tabela marcando o dia, o assunto e sugerindo se devo focar em teoria ou resolução de questões. Siga este exemplo para a tabela: 'Dia: Segunda-feira | Horário: 14:00 - 15:00 | Assunto: Reino Animal | Tarefa: Questões'."
+  },
+  {
+    "id": "est-04",
+    "category": "Estudos",
+    "title": "Gerador de Flashcards",
+    "description": "Crie cartões de memorização estruturados em tabela.",
+    "promptText": "Crie [número] flashcards sobre o tema [tópico/matéria] para eu usar em um aplicativo de memorização espaçada. Formate a saída como uma tabela com duas colunas: a primeira chamada 'Frente' (contendo uma pergunta direta ou conceito) e a segunda chamada 'Verso' (contendo a resposta curta e objetiva)."
+  },
+  {
+    "id": "est-05",
+    "category": "Estudos",
+    "title": "Plano de Revisão Espaçada",
+    "description": "Não esqueça a matéria até o dia da prova.",
+    "promptText": "Acabei de estudar [tópico] hoje. Crie um calendário de revisão espaçada simples para esse assunto, focando na prova que vai acontecer em [data da prova/vestibular]. Me diga exatamente em quais dias daqui para frente eu devo revisar esse assunto e sugira o tipo de material (ex: ler resumo, fazer questões, explicar em voz alta) para cada dia."
+  },
+  {
+    "id": "est-06",
+    "category": "Estudos",
+    "title": "Técnica de Feynman (Revisão)",
+    "description": "Valide se você realmente entendeu um conceito.",
+    "promptText": "Vou te explicar o conceito de [tópico] usando minhas próprias palavras. Aja como um aluno da [série, ex: 8º ano do ensino fundamental] e me faça 3 perguntas caso minha explicação fique confusa ou use jargões difíceis. No final, aponte quais detalhes importantes do conceito original eu esqueci de mencionar. Aqui vai minha explicação: \"[sua explicação]\"."
+  },
+  {
+    "id": "est-07",
+    "category": "Estudos",
+    "title": "Criador de Frases para Decorar",
+    "description": "Gere mnemônicos e frases para memorizar fórmulas e listas.",
+    "promptText": "Preciso memorizar esta lista para a prova de [disciplina]: [inserir lista de itens/regras/fórmulas]. Crie 3 opções de frases mnemônicas (podem ser engraçadas, absurdas ou usando rimas) para me ajudar a decorar essa ordem perfeitamente."
+  },
+  {
+    "id": "est-08",
+    "category": "Estudos",
+    "title": "Explicação de Fórmulas e Aplicação",
+    "description": "Entenda a lógica por trás das fórmulas exatas.",
+    "promptText": "Eu decorei a fórmula de [nome da fórmula/equação], mas não entendo o que ela significa no mundo real. Me explique de forma simples o que cada variável dessa equação representa fisicamente e me dê 2 exemplos práticos de como ela é usada na engenharia, na tecnologia ou no nosso dia a dia."
+  },
+  {
+    "id": "est-09",
+    "category": "Estudos",
+    "title": "Mapa Mental Estruturado",
+    "description": "Organize tópicos complexos de forma visual.",
+    "promptText": "Preciso organizar minhas ideias para estudar [tópico]. Crie a estrutura em texto para um mapa mental. Coloque o tema central no meio e use marcadores em formato de árvore (tópicos e subtópicos) ramificando para os conceitos secundários, terciários e exemplos práticos. Mantenha as frases curtas, usando no máximo 3 palavras por ramificação."
+  },
+  {
+    "id": "est-10",
+    "category": "Estudos",
+    "title": "Comparador de Conceitos",
+    "description": "Crie tabelas comparando termos que sempre confundem.",
+    "promptText": "Eu sempre confundo [conceito A] e [conceito B]. Crie uma tabela comparativa evidenciando as diferenças cruciais entre eles. Inclua uma coluna extra com uma 'dica de ouro' para eu bater o olho na questão do vestibular e saber imediatamente identificar qual dos dois é o correto."
+  },
+  {
+    "id": "est-11",
+    "category": "Estudos",
+    "title": "Descomplicador de Textos",
+    "description": "Traduza textos rebuscados para uma linguagem atual.",
+    "promptText": "Este trecho do livro/documento \"[nome da obra]\" é muito difícil de entender por causa do vocabulário rebuscado. Reescreva o texto abaixo usando uma linguagem moderna e direta, como se estivesse explicando para mim numa conversa de WhatsApp, mas sem perder o sentido e as informações originais. Trecho: [cole/anexe uma imagem do texto]."
+  },
+  {
+    "id": "est-12",
+    "category": "Estudos",
+    "title": "História para Cultura Pop",
+    "description": "Entenda eventos históricos através de séries e filmes.",
+    "promptText": "Estou estudando o período da [evento histórico, ex: Guerra Fria / Revolução Francesa]. Faça uma analogia detalhada conectando os principais países, líderes e conflitos desse período com as dinâmicas de [série/jogo/filme/personagem]. Mostre quem seriam os aliados e rivais nesse universo para que eu entenda a geopolítica da época."
+  },
+  {
+    "id": "est-13",
+    "category": "Estudos",
+    "title": "Quiz Interativo",
+    "description": "Teste seus conhecimentos de forma ativa e progressiva.",
+    "promptText": "Quero testar meus conhecimentos sobre [assunto/tópico]. Assuma o papel de um avaliador rigoroso. Faça perguntas para testar meu conhecimento sobre o tema, mas faça apenas uma pergunta por vez. Após a minha resposta, classifique-a de 0 a 10, diga o que faltou para a resposta ser perfeita e, em seguida, faça a próxima pergunta. O quiz deve parar ao atingir [número] perguntas no total."
+  },
+  {
+    "id": "est-14",
+    "category": "Estudos",
+    "title": "Resumidor com Palavras-Chave",
+    "description": "Extraia conceitos importantes focados em provas.",
+    "promptText": "Leia o texto abaixo sobre [assunto] e extraia os 5 conceitos mais importantes. Para cada conceito, dê uma definição de apenas uma frase destacando em negrito as palavras-chave que provavelmente apareceriam na alternativa correta de uma prova de múltipla escolha. Texto: \"[cole/anexe imagem do texto]\"."
+  },
+  {
+    "id": "est-15",
+    "category": "Estudos",
+    "title": "Roteirista de Apresentação",
+    "description": "Crie estrutura de slides e falas para apresentações de escola.",
+    "promptText": "Tenho que fazer uma apresentação de [tempo, ex: 10 minutos] sobre [tema] para a minha turma de [série/ano/faculdade]. Aja como um especialista em oratória e apresentações estilo TED Talk. Crie um roteiro de apresentação dividido em slides. Para cada slide, me diga: O título, o que devo falar (em tópicos) e o que devo colocar de imagem ou recurso visual para prender a atenção da turma (sem colocar muito texto no slide)."
+  },
+  {
+    "id": "est-16",
+    "category": "Estudos",
+    "title": "Gestor de Trabalho em Grupo",
+    "description": "Divida tarefas e organize prazos metodicamente.",
+    "promptText": "Meu grupo tem [número] pessoas e precisamos entregar um trabalho de [matéria] sobre [tema do trabalho] no dia [data de entrega]. Atue como um gerente de projetos ágeis. Divida o trabalho em etapas claras (pesquisa, redação, revisão, montagem final) e sugira uma divisão justa de tarefas para cada membro do grupo. Crie uma tabela com: Nome da Tarefa, Prazo Ideal (considerando a data final) e o que exatamente deve ser entregue nessa etapa."
+  },
+  {
+    "id": "est-17",
+    "category": "Estudos",
+    "title": "Simplificador de Regras e Editais",
+    "description": "Resuma manuais extensos de olimpíadas e provas.",
+    "promptText": "Quero participar da [nome da competição/olimpíada/vestibular, ex: OBMEP/OBA/Feira de Ciências], mas o manual de regras é muito longo. Leia as informações abaixo e aja como um coordenador escolar resumindo o edital para um aluno. Liste os seguintes pontos em tópicos diretos: 1) Prazos principais; 2) O que é obrigatório para participar; 3) O que dá desclassificação imediata; 4) Como a nota ou projeto será avaliado. Regras: [Cole as regras ou partes do edital aqui]"
+  }
+]

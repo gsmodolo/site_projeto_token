@@ -1,0 +1,27 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+build/
+
+# Lock files
+package-lock.json
+yarn.lock
+
+# Git internals
+.git/
+
+# Brand assets (binários — verificar visualmente, não ler)
+public/brand_assets/*.png
+public/brand_assets/*.jpg
+
+# Fotos de visitas institucionais (binários)
+public/fotos_visitas/*.jpg
+
+# Screenshots temporários
+temporary screenshots/
+
+# Playwright cache & reports
+/test-results/
+/playwright-report/
