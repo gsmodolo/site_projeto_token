@@ -1,8 +1,8 @@
-# Projeto IAgora
+# Projeto Token
  
 Plataforma de letramento em IA para estudantes, profissionais.
  
-O **IAgora** é um projeto educacional que nasceu pra ajudar alunos a entender como usar Inteligência Artificial de um jeito ético e produtivo. A gente foca em três coisas: demistificação das IAs (explicar de forma simples e didática o funcionamento, especialmente das LLMs), técnicas de Engenharia de Prompt (com exemplos!) e algumas considerações éticas.
+O **Token** é um projeto educacional que nasceu pra ajudar alunos a entender como usar Inteligência Artificial de um jeito ético e produtivo. A gente foca em três coisas: demistificação das IAs (explicar de forma simples e didática o funcionamento, especialmente das LLMs), técnicas de Engenharia de Prompt (com exemplos!) e algumas considerações éticas.
  
 A ideia começou presencial, com palestras e oficinas que já impactaram mais de 150 alunos (na ETEC, na FATEC no Colégio Uni, por exemplo). Esse site é a versão online, pra escalar o projeto e deixar tudo acessível, com mais ferramentas disponíveis para o público.
  
@@ -54,8 +54,8 @@ Pra isso, está tudo separado em dois lugares:
 **1. Clonar o repositório:**
  
 ```bash
-git clone https://github.com/SEU_USUARIO/SEU_REPOSITORIO.git
-cd SEU_REPOSITORIO
+git clone https://github.com/gsmodolo/site_projeto_token.git
+cd site_projeto_token
 ```
  
 **2. Instalar as dependências:**
