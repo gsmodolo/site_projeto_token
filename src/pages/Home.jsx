@@ -13,7 +13,7 @@ export default function Home() {
       <section className="relative overflow-hidden">
         <div
           aria-hidden="true"
-          className="absolute inset-0 bg-gradient-to-br from-primary via-primary to-[#003c66]"
+          className="absolute inset-0 bg-gradient-to-br from-primary via-primary to-secondary"
         />
         <div
           aria-hidden="true"
@@ -21,7 +21,7 @@ export default function Home() {
         />
         <div
           aria-hidden="true"
-          className="absolute -bottom-24 -left-20 h-72 w-72 rounded-full bg-accent/30 blur-3xl"
+          className="absolute -bottom-24 -left-20 h-72 w-72 rounded-full bg-secondary/30 blur-3xl"
         />
 
         <div className="container-page relative grid gap-12 py-20 text-white md:grid-cols-[1.2fr_1fr] md:items-center md:py-28">
@@ -30,18 +30,18 @@ export default function Home() {
               IEEE Computer Society — USP São Carlos
             </span>
 
-            <h1 className="font-heading text-4xl font-extrabold leading-tight md:text-5xl">
+            <h1 className="font-heading text-4xl font-extrabold leading-tight md:text-5xl text-nink">
               {about.title}
             </h1>
 
-            <p className="max-w-2xl text-lg leading-relaxed text-white/90">
+            <p className="max-w-2xl text-lg leading-relaxed text-white/90 text-muted">
               {about.description}
             </p>
 
             <div className="flex flex-wrap gap-3">
               <Link
                 to="/banco-de-prompts"
-                className="inline-flex items-center justify-center rounded-lg bg-secondary px-6 py-3 font-heading text-sm font-bold uppercase tracking-wide text-gray-900 shadow-card transition-colors duration-150 ease-out hover:bg-amber-400 focus-visible:bg-amber-400 focus-visible:outline-none"
+                className="inline-flex items-center justify-center rounded-lg bg-secondary px-6 py-3 font-heading text-sm font-bold uppercase tracking-wide text-nink shadow-card transition-colors duration-150 ease-out hover:bg-amber-400 focus-visible:bg-amber-400 focus-visible:outline-none"
               >
                 Explorar prompts
               </Link>
@@ -118,7 +118,7 @@ export default function Home() {
               <span className="font-heading text-xs font-bold uppercase tracking-[0.3em] text-secondary">
                 {impactSection.label}
               </span>
-              <h2 className="font-heading text-3xl font-bold text-gray-900 md:text-4xl">
+              <h2 className="font-heading text-3xl font-bold text-ink md:text-4xl">
                 {impactSection.heading}
               </h2>
               <p className="font-body text-base leading-relaxed text-gray-600">
@@ -129,7 +129,7 @@ export default function Home() {
             <div className="relative rounded-3xl border border-gray-200 bg-gray-50 p-8 shadow-card md:p-10">
               <span
                 aria-hidden="true"
-                className="absolute -top-3 -left-3 inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-secondary text-2xl font-bold text-gray-900 shadow-card"
+                className="absolute -top-3 -left-3 inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-secondary text-2xl font-bold text-nink shadow-card"
               >
                 ✦
               </span>
@@ -140,14 +140,14 @@ export default function Home() {
           </div>
 
           <div className="space-y-5">
-            <h3 className="font-heading text-xl font-bold text-gray-900">
+            <h3 className="font-heading text-xl font-bold text-ink">
               {impactSection.galleryHeading}
             </h3>
             <PhotoGallery images={gallery} />
           </div>
 
           <div className="space-y-5">
-            <h3 className="font-heading text-xl font-bold text-gray-900">
+            <h3 className="font-heading text-xl font-bold text-ink">
               {impactSection.testimonialsHeading}
             </h3>
             <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -177,7 +177,7 @@ export default function Home() {
               <span className="font-heading text-xs font-bold uppercase tracking-[0.3em] text-primary">
                 Vamos conversar
               </span>
-              <h2 className="font-heading text-3xl font-bold text-gray-900 md:text-4xl">
+              <h2 className="font-heading text-3xl font-bold text-ink md:text-4xl">
                 {contact.callToAction}
               </h2>
               <p className="font-body text-base leading-relaxed text-gray-600">
@@ -190,7 +190,7 @@ export default function Home() {
                 href={contact.instagram}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 rounded-lg bg-secondary px-6 py-3 font-heading text-sm font-bold uppercase tracking-wide text-gray-900 shadow-card transition-colors duration-150 ease-out hover:bg-amber-400 focus-visible:bg-amber-400 focus-visible:outline-none"
+                className="inline-flex items-center justify-center gap-2 rounded-lg bg-secondary px-6 py-3 font-heading text-sm font-bold uppercase tracking-wide text-nink shadow-card transition-colors duration-150 ease-out hover:bg-amber-400 focus-visible:bg-amber-400 focus-visible:outline-none"
               >
                 Seguir no Instagram
                 <span aria-hidden="true">↗</span>

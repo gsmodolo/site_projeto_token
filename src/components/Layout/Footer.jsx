@@ -10,7 +10,7 @@ export default function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="bg-primary text-white">
+    <footer className="bg-secondary text-white">
       <div className="container-page grid gap-10 py-12 md:grid-cols-[1.4fr_1fr] md:items-start">
         <div className="space-y-5">
           <div className="flex flex-wrap items-center gap-6">
@@ -38,7 +38,7 @@ export default function Footer() {
             <li>
               <a
                 href={`mailto:${brandConfig.contact.email}`}
-                className="inline-flex items-center gap-2 text-white/90 hover:text-secondary focus-visible:text-secondary focus-visible:outline-none"
+                className="inline-flex items-center gap-2 text-nink/90 hover:text-primary focus-visible:text-secondary focus-visible:outline-none"
               >
                 <span aria-hidden="true">✉</span>
                 {brandConfig.contact.email}
@@ -49,7 +49,7 @@ export default function Footer() {
                 href={brandConfig.social.instagram}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-white/90 hover:text-secondary focus-visible:text-secondary focus-visible:outline-none"
+                className="inline-flex items-center gap-2 text-nink/90 hover:text-primary focus-visible:text-secondary focus-visible:outline-none"
               >
                 <span aria-hidden="true">◉</span>
                 Instagram

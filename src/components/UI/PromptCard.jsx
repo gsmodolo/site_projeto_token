@@ -63,7 +63,7 @@ export default function PromptCard({ title, description, promptText, category })
         className={[
           "mt-5 inline-flex items-center justify-center gap-2 rounded-lg px-5 py-2.5",
           "font-heading text-sm font-bold uppercase tracking-wide",
-          "transition-colors duration-150 ease-out focus-visible:outline-none",
+          "transition-colors duration-150 ease-out focus-visible:outline-none text-nink",
           error
             ? "bg-red-100 text-red-700"
             : copied

@@ -11,7 +11,8 @@ export default {
         secondary: brandTheme.secondary,
         accent: brandTheme.accent,
         surface: brandTheme.background,
-        ink: brandTheme.textMain,
+        ink: brandTheme.textOnLight,
+        nink: brandTheme.textOnDark, //negative ink, for dark backgrounds
         muted: brandTheme.textMuted
       },
       fontFamily: {

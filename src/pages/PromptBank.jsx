@@ -45,10 +45,10 @@ export default function PromptBank() {
         <span className="font-heading text-xs font-bold uppercase tracking-[0.3em] text-primary">
           Banco de Prompts
         </span>
-        <h1 className="font-heading text-3xl font-bold text-gray-900 md:text-4xl">
+        <h1 className="font-heading text-3xl font-bold text-ink md:text-4xl">
           {current.headline}
         </h1>
-        <p className="max-w-2xl font-body text-base leading-relaxed text-gray-600">
+        <p className="max-w-2xl font-body text-base leading-relaxed text-ink/60">
           {current.helper}
         </p>
       </header>

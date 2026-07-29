@@ -19,8 +19,8 @@ export default function Tabs({ tabs, activeTab, onChange }) {
               "rounded-xl px-5 py-2.5 font-heading text-sm font-bold uppercase tracking-wide",
               "transition-colors duration-150 ease-out focus-visible:outline-none",
               isActive
-                ? "bg-secondary text-gray-900 shadow-card"
-                : "text-gray-600 hover:text-primary focus-visible:text-primary"
+                ? "bg-secondary text-nink shadow-card"
+                : "text-ink/60 hover:text-primary focus-visible:text-primary"
             ].join(" ")}
           >
             {tab.label}
@@ -28,7 +28,7 @@ export default function Tabs({ tabs, activeTab, onChange }) {
               <span
                 className={[
                   "ml-2 inline-flex min-w-[1.75rem] items-center justify-center rounded-full px-2 py-0.5 text-xs",
-                  isActive ? "bg-gray-900/10 text-gray-900" : "bg-gray-100 text-gray-600"
+                  isActive ? "bg-gray-900/10 text-nink" : "bg-gray-100 text-gray-600"
                 ].join(" ")}
               >
                 {tab.count}

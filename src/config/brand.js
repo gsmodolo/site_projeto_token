@@ -1,12 +1,14 @@
 export const brandConfig = {
   projectName: "Projeto IAgora",
+  // src/config/brand.js
   theme: {
-    primary: "#00629B",   // IEEE Blue
-    secondary: "#FFA300", // IEEE Orange
-    accent: "#00B5E2",    // IEEE Cyan
-    background: "#FFFFFF", // White
-    textMain: "#000000",  // Black
-    textMuted: "#75787B"  // IEEE Cool Gray 9 C
+    primary: "#FFA300",
+    secondary: "#8B5D33",
+    accent: "#00629B",
+    background: "#F3F3F3",
+    textOnLight: "#000000",  // usar sobre background, primary, accent claros
+    textOnDark: "#FFFFFF",   // usar sobre secondary (marrom) ou qualquer fundo escuro
+    textMuted: "#7B7263"
   },
   typography: {
     heading: "'Montserrat', sans-serif",
