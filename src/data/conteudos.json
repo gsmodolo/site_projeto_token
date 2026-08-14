@@ -1,0 +1,49 @@
+{
+  "slidesSection": {
+    "tag": "Apresentações do Projeto",
+    "title": "Slides das Palestras e Oficinas",
+    "description": "Acesse os materiais visuais utilizados nas nossas imersões nas escolas. O material aborda desde os conceitos introdutórios de LLMs até a prática de Engenharia de Prompt.",
+    "slidesUrl": "https://slides.com",
+    "slidesCount": "Oficina Presencial",
+    "previewImages": []
+  },
+  "recommendedVideos": [
+    {
+      "id": "video-1",
+      "title": "O que são Large Language Models (LLMs)?",
+      "description": "Uma visão didática e conceitual sobre como modelos de linguagem processam informações e geram texto a partir de padrões estatísticos.",
+      "youtubeUrl": "https://www.youtube.com/watch?v=LPZh9BOjkQs",
+      "embedUrl": "https://www.youtube.com/embed/LPZh9BOjkQs"
+    },
+    {
+      "id": "video-2",
+      "title": "Boas Práticas e Engenharia de Prompt",
+      "description": "Entenda como estruturar comandos com clareza, contexto e persona para obter respostas mais precisas e úteis nos estudos.",
+      "youtubeUrl": "https://www.youtube.com/watch?v=jC4v5AS4RIM",
+      "embedUrl": "https://www.youtube.com/embed/jC4v5AS4RIM"
+    }
+  ],
+  "recommendedResources": [
+    {
+      "id": "res-1",
+      "title": "Learn Prompting — Guia Gratuito",
+      "category": "Curso / Documentação",
+      "description": "Um dos cursos abertos mais completos e acessíveis do mundo sobre Engenharia de Prompt, do básico ao avançado.",
+      "url": "https://learnprompting.org/"
+    },
+    {
+      "id": "res-2",
+      "title": "Elements of AI — Universidade de Helsinque",
+      "category": "Curso Gratuito",
+      "description": "Série de cursos gratuitos criados para desmistificar a Inteligência Artificial para qualquer pessoa, sem necessidade de código.",
+      "url": "https://www.elementsofai.com/"
+    },
+    {
+      "id": "res-3",
+      "title": "UNESCO: Guia de IA Generativa na Educação",
+      "category": "Leitura / Artigo",
+      "description": "Diretrizes oficiais da UNESCO sobre o uso ético, inclusivo e responsável de ferramentas de IA na rotina de estudantes e escolas.",
+      "url": "https://unesdoc.unesco.org/"
+    }
+  ]
+}
