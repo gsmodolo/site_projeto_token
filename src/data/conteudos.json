@@ -1,11 +1,12 @@
 {
   "slidesSection": {
-    "tag": "Apresentações do Projeto",
-    "title": "Slides das Palestras e Oficinas",
-    "description": "Acesse os materiais visuais utilizados nas nossas imersões nas escolas. O material aborda desde os conceitos introdutórios de LLMs até a prática de Engenharia de Prompt.",
-    "slidesUrl": "https://slides.com",
-    "slidesCount": "Oficina Presencial",
-    "previewImages": []
+    "tag": "Material Didático",
+    "title": "Apresentações e Slides",
+    "description": "Explore os slides utilizados nas aulas e palestras.",
+    "originalLinks": {
+      "principais": "https://docs.google.com/presentation/d/1qrBrIQVn33PfSRv0QQbEVF6-LOTFiDhW/edit?usp=sharing&ouid=113689100494521751253&rtpof=true&sd=true",
+      "complexos": "https://docs.google.com/presentation/d/1bzbFbtCMdgQh_ihOFW24I8FCWBluGADk/edit?usp=sharing&ouid=113689100494521751253&rtpof=true&sd=true"
+    }
   },
   "recommendedVideos": [
     {
