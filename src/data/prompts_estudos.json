@@ -117,5 +117,54 @@
     "title": "Simplificador de Regras e Editais",
     "description": "Resuma manuais extensos de olimpíadas e provas.",
     "promptText": "Quero participar da [nome da competição/olimpíada/vestibular, ex: OBMEP/OBA/Feira de Ciências], mas o manual de regras é muito longo. Leia as informações abaixo e aja como um coordenador escolar resumindo o edital para um aluno. Liste os seguintes pontos em tópicos diretos: 1) Prazos principais; 2) O que é obrigatório para participar; 3) O que dá desclassificação imediata; 4) Como a nota ou projeto será avaliado. Regras: [Cole as regras ou partes do edital aqui]"
+  },
+  {
+    "id": "est-18",
+    "category": "Estudos",
+    "title": "Professor Socrático",
+    "description": "Aprenda descobrindo a resposta por meio de perguntas.",
+    "promptText": "Quero aprender sobre [tópico]. Aja como um professor socrático: não me entregue a explicação pronta. Faça perguntas progressivas que me façam relacionar os conceitos e chegar às conclusões sozinho. Faça apenas uma pergunta por vez e espere minha resposta antes de continuar. Se eu cometer um erro, não revele imediatamente a resposta; dê uma pista que me ajude a perceber o problema."
+  },
+  {
+    "id": "est-19",
+    "category": "Estudos",
+    "title": "Detector de Lacunas",
+    "description": "Descubra exatamente quais conhecimentos você ainda precisa aprender.",
+    "promptText": "Estou estudando [tópico] e quero descobrir o que ainda não sei. Faça um diagnóstico com [número] perguntas, começando pelas mais básicas e aumentando gradualmente a dificuldade. Faça uma pergunta por vez e espere minha resposta. No final, classifique os conteúdos em 'domino', 'preciso revisar' e 'preciso aprender', explicando quais conceitos devo estudar primeiro."
+  },
+  {
+    "id": "est-20",
+    "category": "Estudos",
+    "title": "Transformador de Aula",
+    "description": "Transforme suas anotações de aula em um material de revisão.",
+    "promptText": "Estas são minhas anotações de uma aula sobre [tema]: [cole ou envie suas anotações]. Organize o conteúdo sem inventar informações. Transforme minhas anotações em um material de revisão com: 1) conceitos principais; 2) definições importantes; 3) exemplos; 4) relações entre os conceitos; 5) possíveis pontos de atenção em uma prova. Ao final, crie 5 perguntas para eu testar minha compreensão."
+  },
+  {
+    "id": "est-21",
+    "category": "Estudos",
+    "title": "Explicação em Três Níveis",
+    "description": "Entenda o mesmo assunto do básico ao avançado.",
+    "promptText": "Explique [tópico] em três níveis diferentes. Primeiro, explique como se eu nunca tivesse estudado o assunto. Depois, explique no nível esperado para um aluno do ensino médio. Por último, apresente uma explicação mais aprofundada, mostrando relações com outros conceitos. Use exemplos diferentes em cada nível e deixe claro quais conhecimentos são necessários para avançar."
+  },
+  {
+    "id": "est-22",
+    "category": "Estudos",
+    "title": "Professor de Revisão Oral",
+    "description": "Revise uma matéria tentando explicá-la em voz alta.",
+    "promptText": "Quero revisar [tópico] falando em voz alta. Faça o papel de um professor que está me avaliando. Comece pedindo para eu explicar uma parte do conteúdo. Depois da minha resposta, identifique erros, informações incompletas e conceitos que parecem não estar claros. Faça perguntas adicionais para aprofundar meu entendimento e continue até avaliarmos os principais pontos do assunto."
+  },
+  {
+    "id": "est-23",
+    "category": "Estudos",
+    "title": "Conexão entre Matérias",
+    "description": "Entenda como diferentes disciplinas se relacionam.",
+    "promptText": "Estou estudando [tópico] em [disciplina]. Mostre como esse assunto se relaciona com outras matérias do ensino médio, especialmente [outras disciplinas, se houver]. Apresente pelo menos 5 conexões e explique cada uma com um exemplo. No final, crie uma questão interdisciplinar que combine pelo menos duas dessas áreas."
+  },
+  {
+    "id": "est-24",
+    "category": "Estudos",
+    "title": "Revisor de Material",
+    "description": "Confira se seu resumo realmente contém o que você precisa saber.",
+    "promptText": "Vou enviar meu resumo sobre [tópico]. Analise o material como um professor preparando uma prova. Identifique: 1) informações corretas; 2) possíveis erros conceituais; 3) conceitos importantes que estão faltando; 4) informações desnecessárias ou repetidas; 5) pontos que precisam de uma explicação melhor. Depois, apresente uma versão reorganizada do resumo mantendo meu conteúdo original e corrigindo os problemas encontrados."
   }
 ]

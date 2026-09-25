@@ -68,5 +68,96 @@
     "title": "Plano de Leitura Obrigatória",
     "description": "Divida livros cansativos com incentivos diários.",
     "promptText": "Preciso ler a obra [nome do livro] para o vestibular, mas a linguagem é muito antiga e eu perco o foco. Atue como um influenciador digital focado em literatura (booktuber). Crie um plano de leitura engajante para eu terminar o livro em [número] dias. Para cada dia do cronograma, estabeleça a meta de capítulos e me dê um 'spoiler sem contexto' ou um 'motivo fofoca' do que vai acontecer nesses capítulos para me deixar com vontade de ler."
+  },
+  {
+    "id": "vest-11",
+    "category": "Vestibulares",
+    "title": "Analisador de Prova Anterior",
+    "description": "Descubra quais conteúdos aparecem em uma prova de vestibular.",
+    "promptText": "Vou enviar uma prova anterior do [vestibular]. Analise todas as questões e organize uma tabela contendo: número da questão, disciplina, assunto principal, habilidade necessária e nível aproximado de dificuldade. Depois, encontre padrões nos conteúdos cobrados e liste quais assuntos aparecem com maior frequência. Não invente informações sobre a prova que não estejam presentes no material enviado."
+  },
+  {
+    "id": "vest-12",
+    "category": "Vestibulares",
+    "title": "Treino de Segunda Fase",
+    "description": "Pratique questões discursivas mostrando seu raciocínio.",
+    "promptText": "Quero treinar questões discursivas para a segunda fase do [vestibular]. Crie [número] questões sobre [disciplina/assunto], considerando o nível de aprofundamento esperado nesse tipo de prova. Não mostre as respostas inicialmente. Depois que eu responder, corrija minha resolução avaliando conhecimento, raciocínio, organização e justificativa. Mostre quais partes poderiam receber uma resposta mais completa."
+  },
+  {
+    "id": "vest-13",
+    "category": "Vestibulares",
+    "title": "Treino de Discursivas",
+    "description": "Aprenda a transformar seu raciocínio em uma resposta objetiva.",
+    "promptText": "Vou enviar uma questão discursiva de vestibular e minha resposta. Analise minha solução sem simplesmente dizer se está certa ou errada. Mostre quais partes da resposta atendem ao que a questão pede, quais informações estão faltando e quais trechos poderiam ser escritos de maneira mais clara. Depois, apresente um exemplo de resposta completa e explique sua estrutura."
+  },
+  {
+    "id": "vest-14",
+    "category": "Vestibulares",
+    "title": "Treino de Atualidades",
+    "description": "Relacione acontecimentos recentes aos conteúdos cobrados nos vestibulares.",
+    "promptText": "Quero estudar atualidades para o [vestibular]. Liste acontecimentos relevantes de [período] relacionados a política, economia, meio ambiente, ciência, tecnologia, sociedade e relações internacionais. Para cada acontecimento, explique o contexto e indique quais conteúdos do ensino médio podem ser relacionados a ele. Diferencie claramente fatos confirmados de análises ou interpretações."
+  },
+  {
+    "id": "vest-15",
+    "category": "Vestibulares",
+    "title": "Treino de Humanas",
+    "description": "Pratique História, Geografia, Filosofia e Sociologia com questões contextualizadas.",
+    "promptText": "Crie [número] questões de Ciências Humanas para preparação para o [vestibular], envolvendo [História/Geografia/Filosofia/Sociologia]. Priorize interpretação de textos, mapas, gráficos, documentos históricos e relações entre conceitos. Apresente uma questão por vez. Depois da minha resposta, explique o raciocínio necessário e quais informações do enunciado eram importantes."
+  },
+  {
+    "id": "vest-16",
+    "category": "Vestibulares",
+    "title": "Treino de Ciências da Natureza",
+    "description": "Pratique Física, Química e Biologia com problemas contextualizados.",
+    "promptText": "Crie [número] questões de Ciências da Natureza para preparação para o [vestibular], envolvendo [Física/Química/Biologia]. Priorize situações-problema, interpretação de experimentos, gráficos, fórmulas e aplicações no cotidiano. Apresente uma questão por vez e, após minha resposta, explique passo a passo o raciocínio necessário para resolvê-la."
+  },
+  {
+    "id": "vest-17",
+    "category": "Vestibulares",
+    "title": "Treino de Matemática",
+    "description": "Pratique matemática focando no raciocínio usado nas questões.",
+    "promptText": "Quero treinar [assunto de matemática] para o [vestibular]. Crie [número] questões progressivas, começando pelo nível básico e chegando ao nível avançado. Não mostre as respostas imediatamente. Depois que eu tentar cada questão, analise meu raciocínio, identifique onde errei e mostre uma estratégia alternativa de resolução quando houver."
+  },
+  {
+    "id": "vest-18",
+    "category": "Vestibulares",
+    "title": "Treino de Linguagens",
+    "description": "Pratique interpretação de textos, literatura e linguagem.",
+    "promptText": "Crie [número] questões de Linguagens para preparação para o [vestibular]. Misture interpretação textual, literatura, funções da linguagem, variação linguística, gêneros textuais e recursos argumentativos. Priorize questões em que seja necessário interpretar o texto para chegar à resposta. Não mostre o gabarito antes da minha tentativa."
+  },
+  {
+    "id": "vest-19",
+    "category": "Vestibulares",
+    "title": "Identificador de Pegadinhas",
+    "description": "Aprenda a reconhecer alternativas aparentemente corretas.",
+    "promptText": "Vou enviar uma questão de [vestibular]. Analise todas as alternativas e explique por que cada uma poderia parecer correta para um candidato desatento. Identifique palavras, conceitos ou detalhes do enunciado que diferenciam a alternativa correta das demais. No final, apresente uma estratégia geral para evitar esse tipo de erro em questões semelhantes."
+  },
+  {
+    "id": "vest-20",
+    "category": "Vestibulares",
+    "title": "Revisão por Assunto",
+    "description": "Faça uma revisão direcionada de um conteúdo antes de voltar às questões.",
+    "promptText": "Preciso revisar [assunto] para o [vestibular]. Faça uma revisão objetiva dividida em: 1) conceitos indispensáveis; 2) fórmulas ou informações que preciso memorizar; 3) erros comuns; 4) relações com outros assuntos; 5) exemplos de aplicação. Depois, crie 5 questões de diferentes níveis para verificar se estou pronto para voltar a fazer exercícios sobre o tema."
+  },
+  {
+    "id": "vest-21",
+    "category": "Vestibulares",
+    "title": "Treino de Interpretação",
+    "description": "Aprenda a extrair informações importantes de textos de vestibular.",
+    "promptText": "Quero melhorar minha interpretação de textos para o [vestibular]. Apresente um texto no nível da prova e faça perguntas que exijam identificar ideia principal, informações implícitas, relação entre argumentos, intenção do autor e significado de expressões no contexto. Faça uma pergunta por vez e explique meu erro depois de cada resposta."
+  },
+  {
+    "id": "vest-22",
+    "category": "Vestibulares",
+    "title": "Plano para Matéria Atrasada",
+    "description": "Recupere uma disciplina atrasada sem abandonar as outras.",
+    "promptText": "Estou atrasado em [disciplina] e preciso me preparar para o [vestibular]. Tenho [tempo disponível] por semana e ainda preciso estudar [outras disciplinas]. Crie um plano de recuperação que priorize os fundamentos necessários para avançar, sem tentar estudar tudo ao mesmo tempo. Divida os conteúdos em ordem de pré-requisito e inclua exercícios e revisões."
+  },
+  {
+    "id": "vest-23",
+    "category": "Vestibulares",
+    "title": "Simulação Completa de Prova",
+    "description": "Faça uma simulação seguindo as condições de uma prova real.",
+    "promptText": "Quero simular uma prova do [vestibular]. Crie uma sequência de [número] questões envolvendo [disciplinas], seguindo uma distribuição de conteúdos semelhante à estrutura informada abaixo: [estrutura da prova]. Não mostre respostas ou explicações durante a simulação. Apresente uma questão por vez e registre minhas respostas. Ao final, corrija a prova, apresente meu desempenho por disciplina e indique quais assuntos devo revisar."
   }
 ]

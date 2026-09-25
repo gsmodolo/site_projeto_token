@@ -22,5 +22,35 @@
     "name": "Perplexity AI",
     "url": "https://www.perplexity.ai",
     "educationalUse": "Funciona como um motor de busca avançado que sempre cita as fontes da informação. Fundamental para pesquisas escolares e combate a alucinações."
+  },
+  {
+    "id": "notebooklm",
+    "name": "NotebookLM",
+    "url": "https://notebooklm.google.com",
+    "educationalUse": "Permite adicionar PDFs, textos, slides e outras fontes para fazer perguntas e estudar usando o próprio material fornecido."
+  },
+  {
+    "id": "gamma",
+    "name": "Gamma",
+    "url": "https://gamma.app",
+    "educationalUse": "Ajuda a transformar ideias e conteúdos em apresentações, documentos e materiais visuais usando IA."
+  },
+  {
+    "id": "canva-ai",
+    "name": "Canva",
+    "url": "https://www.canva.com",
+    "educationalUse": "Ferramenta de design com recursos de IA para criar apresentações, infográficos, mapas mentais, pôsteres e materiais escolares."
+  },
+  {
+    "id": "quizlet",
+    "name": "Quizlet",
+    "url": "https://quizlet.com",
+    "educationalUse": "Plataforma de estudo baseada em flashcards, testes e atividades de revisão, com recursos de IA para transformar conteúdos em materiais de estudo."
+  },
+  {
+    "id": "wolframalpha",
+    "name": "Wolfram Alpha",
+    "url": "https://www.wolframalpha.com",
+    "educationalUse": "Ferramenta computacional útil para matemática, física, estatística e outras áreas que envolvem cálculos e análise de dados."
   }
 ]
