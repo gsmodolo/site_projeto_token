@@ -159,5 +159,75 @@
     "title": "Simulação Completa de Prova",
     "description": "Faça uma simulação seguindo as condições de uma prova real.",
     "promptText": "Quero simular uma prova do [vestibular]. Crie uma sequência de [número] questões envolvendo [disciplinas], seguindo uma distribuição de conteúdos semelhante à estrutura informada abaixo: [estrutura da prova]. Não mostre respostas ou explicações durante a simulação. Apresente uma questão por vez e registre minhas respostas. Ao final, corrija a prova, apresente meu desempenho por disciplina e indique quais assuntos devo revisar."
+  },
+  {
+    "id": "vest-24",
+    "category": "Vestibulares",
+    "title": "Planejamento de Redação",
+    "description": "Organize tese e argumentos antes de começar a escrever.",
+    "promptText": "O tema da redação é: [tema], no formato da [ENEM/Fuvest/Unicamp/Unesp]. Antes de escrever, quero montar o plano do texto. Não escreva a redação por mim. Me faça perguntas, uma por vez, para eu chegar sozinho(a) a uma tese clara, dois argumentos com repertório e uma conclusão. Se eu não souber um repertório, me dê duas opções para eu escolher. No final, organize minhas respostas em um esqueleto de parágrafos que eu possa seguir."
+  },
+  {
+    "id": "vest-25",
+    "category": "Vestibulares",
+    "title": "Proposta de Intervenção (ENEM)",
+    "description": "Monte uma proposta completa com os 5 elementos exigidos.",
+    "promptText": "Estou escrevendo uma redação do ENEM sobre [tema] e minha proposta de intervenção está assim: [colar proposta]. Confira se ela tem os 5 elementos da Competência 5 (agente, ação, meio/modo, finalidade e detalhamento de pelo menos um deles) e se respeita os direitos humanos. Aponte o que está faltando ou vago e me dê dicas para melhorar. Não me dê a proposta pronta, só perguntas e dicas."
+  },
+  {
+    "id": "vest-26",
+    "category": "Vestibulares",
+    "title": "Gêneros da Redação Unicamp",
+    "description": "Pratique os diferentes gêneros cobrados pela Unicamp.",
+    "promptText": "Vou fazer a redação da Unicamp e quero treinar o gênero [ex.: carta aberta, artigo de opinião, discurso, resenha, relato]. Explique as características desse gênero, o que a banca costuma cobrar (interlocutor, propósito e situação de comunicação) e os erros mais comuns. Depois crie uma proposta de treino no estilo da Unicamp para eu fazer. Não cite provas de anos anteriores nem dados que você não possa confirmar; se usar números na coletânea, avise que são fictícios."
+  },
+  {
+    "id": "vest-27",
+    "category": "Vestibulares",
+    "title": "Leitura de Gráficos e Tabelas",
+    "description": "Aprenda a interpretar gráficos, tabelas e mapas das provas.",
+    "promptText": "Tenho dificuldade em questões com [gráficos/tabelas/mapas/infográficos] em [matéria]. Vou enviar uma questão: [colar a questão ou descrever o gráfico]. Me ensine a ler esse tipo de dado passo a passo: o que olhar primeiro, como interpretar os eixos e unidades e como relacionar com o enunciado. Depois me passe uma questão parecida, sem mostrar a resposta, para eu tentar sozinho(a) e você corrigir."
+  },
+  {
+    "id": "vest-28",
+    "category": "Vestibulares",
+    "title": "Charges e Tirinhas",
+    "description": "Entenda a crítica e a ironia por trás das imagens.",
+    "promptText": "Vou enviar uma [charge/tirinha/meme] que caiu no [vestibular]: [anexar imagem ou descrever: quem aparece, o que dizem e o que está escrito]. Me ajude a entender o que ela critica, qual é o contexto e qual recurso de humor ou ironia foi usado. Antes de explicar, me pergunte o que eu entendi e só depois complete o que faltou."
+  },
+  {
+    "id": "vest-29",
+    "category": "Vestibulares",
+    "title": "Inglês para Vestibular",
+    "description": "Entenda textos em inglês mesmo sem dominar o idioma.",
+    "promptText": "Meu inglês é [básico/intermediário] e vou fazer a prova de inglês do [ENEM/Fuvest/Unicamp/Unesp]. Vou colar o texto e a pergunta da prova (se tiver): [texto e pergunta]. Me ensine estratégias de leitura para prova (palavras cognatas, ideia principal, palavras-chave da pergunta) aplicando no próprio texto. Não traduza tudo: me ajude a entender só o necessário para responder."
+  },
+  {
+    "id": "vest-30",
+    "category": "Vestibulares",
+    "title": "Entendendo a TRI do ENEM",
+    "description": "Saiba como sua nota é calculada e use isso a seu favor.",
+    "promptText": "Não entendo como funciona a TRI do ENEM. Explique de forma simples, com um exemplo de dois alunos que acertaram o mesmo número de questões e tiraram notas diferentes. Depois me diga o que isso muda na minha estratégia de prova: ordem das questões, quando chutar e como lidar com as difíceis. Separe o que é fato oficial do INEP do que é só dica de cursinho."
+  },
+  {
+    "id": "vest-31",
+    "category": "Vestibulares",
+    "title": "Calendário de Vestibulares",
+    "description": "Organize inscrições, taxas, isenções e datas de prova.",
+    "promptText": "Hoje é [data de hoje] e vou prestar [ENEM/Fuvest/Unicamp/Unesp/outros] para entrar na faculdade em [ano de ingresso]. Monte uma tabela com o que eu preciso acompanhar em cada um: período de inscrição, pedido de isenção ou redução de taxa, datas de prova e documentos. Não invente datas: se não souber a data exata deste ano, escreva \"a confirmar\", diga quais prazos já podem ter passado e em qual site oficial eu devo confirmar."
+  },
+  {
+    "id": "vest-32",
+    "category": "Vestibulares",
+    "title": "Escolha de Curso e Nota de Corte",
+    "description": "Entenda notas de corte e pesos para montar sua estratégia.",
+    "promptText": "Quero cursar [curso] e estou pensando em [universidades]. Meu desempenho no último simulado foi [nota/desempenho por área]. Explique, para cada processo que citei ([SiSU/Fuvest/Unicamp/Unesp]), como funcionam os pesos e as notas de corte (a Fuvest e a Unicamp não usam o SiSU), em quais áreas eu deveria focar para aumentar minha chance e onde encontro os dados oficiais de anos anteriores. Não invente números: se não tiver certeza de uma nota de corte ou de um peso, diga isso e me indique a fonte."
+  },
+  {
+    "id": "vest-33",
+    "category": "Vestibulares",
+    "title": "Revisão de Véspera",
+    "description": "Saiba o que fazer (e o que evitar) antes da prova.",
+    "promptText": "Minha prova do [vestibular] é daqui a [1 ou 2 dias]. Monte um plano para hoje: uma revisão leve, de no máximo 2 horas, de [matérias/assuntos] sem tentar aprender nada novo, um checklist do que levar (documentos, caneta, lanche, horários) e dicas para dormir bem. Seja direto e me ajude a ficar tranquilo(a)."
   }
 ]

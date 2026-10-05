@@ -52,5 +52,29 @@
     "name": "Wolfram Alpha",
     "url": "https://www.wolframalpha.com",
     "educationalUse": "Ferramenta computacional útil para matemática, física, estatística e outras áreas que envolvem cálculos e análise de dados."
+  },
+  {
+    "id": "mec-enem",
+    "name": "MEC Enem (Ministério da Educação)",
+    "url": "https://app.mecenem.mec.gov.br",
+    "educationalUse": "App oficial e gratuito do MEC (login gov.br). Tem simulados com questões de ENEMs anteriores, plano de estudos montado conforme o tempo até a prova e correção de redação: você tira foto da folha escrita à mão e recebe uma nota estimada por competência, com dicas. Use a nota como termômetro, não como sentença."
+  },
+  {
+    "id": "languagetool",
+    "name": "LanguageTool",
+    "url": "https://languagetool.org/pt-BR",
+    "educationalUse": "Corretor de português que aponta erros de crase, vírgula, concordância e repetição de palavras, mas não reescreve o texto: você decide o que corrigir. Ótimo para revisar redações e aprender as regras, já que na prova não tem corretor."
+  },
+  {
+    "id": "google-lens",
+    "name": "Google Lens",
+    "url": "https://lens.google",
+    "educationalUse": "Aponte a câmera para uma questão de matemática, ciências ou história e veja a explicação passo a passo. Já vem no app do Google, sem ocupar espaço. Tente resolver primeiro e use para entender onde errou, não para copiar a resposta."
+  },
+  {
+    "id": "consensus",
+    "name": "Consensus",
+    "url": "https://consensus.app",
+    "educationalUse": "Buscador de artigos científicos com IA: faça uma pergunta e veja o que os estudos dizem e o quanto os cientistas concordam entre si. Bom para repertório de redação, feira de ciências e iniciação científica. A maior parte dos artigos está em inglês, então abra a fonte para confirmar."
   }
 ]

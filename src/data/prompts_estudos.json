@@ -166,5 +166,75 @@
     "title": "Revisor de Material",
     "description": "Confira se seu resumo realmente contém o que você precisa saber.",
     "promptText": "Vou enviar meu resumo sobre [tópico]. Analise o material como um professor preparando uma prova. Identifique: 1) informações corretas; 2) possíveis erros conceituais; 3) conceitos importantes que estão faltando; 4) informações desnecessárias ou repetidas; 5) pontos que precisam de uma explicação melhor. Depois, apresente uma versão reorganizada do resumo mantendo meu conteúdo original e corrigindo os problemas encontrados."
+  },
+  {
+    "id": "est-25",
+    "category": "Estudos",
+    "title": "Destravar a Procrastinação",
+    "description": "Comece a estudar mesmo quando bate a preguiça.",
+    "promptText": "Preciso estudar [matéria/tarefa], mas estou enrolando há [tempo] e não consigo começar. Me ajude a quebrar isso em passos bem pequenos, que eu consiga fazer em blocos de 25 minutos. O primeiro passo tem que ser tão fácil que eu consiga começar agora. Depois de cada bloco, vou te contar como foi e você me passa só o próximo, sem mostrar os outros antes."
+  },
+  {
+    "id": "est-26",
+    "category": "Estudos",
+    "title": "Calma Antes da Prova",
+    "description": "Controle o nervosismo e chegue mais tranquilo no dia.",
+    "promptText": "Tenho [prova/vestibular] daqui a [tempo] e fico muito nervoso(a): [o que acontece comigo, ex.: dá branco, não durmo, travo na primeira questão difícil]. Me sugira técnicas simples e práticas para usar na semana da prova, na noite anterior e durante a prova. Dê no máximo 3 técnicas para cada momento e explique cada uma de um jeito rápido, como se fosse um amigo que já passou por isso."
+  },
+  {
+    "id": "est-27",
+    "category": "Estudos",
+    "title": "Onde Eu Errei?",
+    "description": "Encontre o passo exato em que sua resolução deu errado.",
+    "promptText": "Fiz este exercício de [matéria] e meu resultado deu [meu resultado], mas o gabarito diz [resposta do gabarito]. Enunciado: [colar ou anexar]. Minha resolução: [colar ou anexar foto]. Não refaça tudo do zero: aponte em qual passo eu errei, explique por que aquilo está errado e me deixe tentar corrigir sozinho(a) antes de mostrar a conta certa."
+  },
+  {
+    "id": "est-28",
+    "category": "Estudos",
+    "title": "Rotina Semanal Equilibrada",
+    "description": "Encaixe escola, estudo, descanso e lazer na sua semana.",
+    "promptText": "Minha semana é assim: [horários de aula, cursinho, trabalho, transporte, atividades]. Durmo por volta de [horário] e acordo às [horário]. Monte uma rotina semanal realista em tabela, com horários de estudo, pausas, sono e pelo menos um tempo livre por dia. Prefiro estudar [manhã/tarde/noite] e minhas matérias mais difíceis são [matérias]. Se meu sono ficar abaixo de 7 horas ou algo não couber, me avise e proponha o que ajustar."
+  },
+  {
+    "id": "est-29",
+    "category": "Estudos",
+    "title": "Mensagem para o Professor",
+    "description": "Escreva uma mensagem educada para tirar dúvidas ou pedir revisão.",
+    "promptText": "Preciso mandar uma mensagem para meu professor de [matéria] por [e-mail/WhatsApp/plataforma da escola]. O motivo é: [escolha um e dê os detalhes, ex.: tirar uma dúvida sobre a questão 12 de logaritmos]. Escreva uma mensagem curta, educada e clara, sem ficar formal demais. Depois me explique por que escolheu esse tom, para eu aprender a escrever as próximas sozinho(a)."
+  },
+  {
+    "id": "est-30",
+    "category": "Estudos",
+    "title": "Aprendendo com Meus Erros de Português",
+    "description": "Entenda as regras por trás das correções do seu texto.",
+    "promptText": "Vou colar um texto que escrevi: [texto]. Não reescreva o texto inteiro. Liste os erros de gramática, pontuação e concordância que encontrar, mostrando o trecho original, a correção e a regra explicada em uma frase simples. No final, diga quais são os 3 tipos de erro que mais apareceram (se houver menos de 3, diga quantos) e dê um exercício rápido para cada um."
+  },
+  {
+    "id": "est-31",
+    "category": "Estudos",
+    "title": "Projeto de Feira de Ciências",
+    "description": "Transforme uma curiosidade em um projeto científico de verdade.",
+    "promptText": "Quero fazer um projeto para [feira de ciências/trabalho de iniciação científica/olimpíada] e me interesso por [tema]. Tenho [tempo] e acesso a [materiais/laboratório/só materiais de casa]. Me ajude a transformar isso em uma pergunta de pesquisa, uma hipótese e um experimento simples e seguro. Me faça uma ou duas perguntas por vez antes de sugerir, e deixe a pergunta de pesquisa e a hipótese saírem de mim: você só me ajuda a lapidar."
+  },
+  {
+    "id": "est-32",
+    "category": "Estudos",
+    "title": "Conferindo a Resposta da IA",
+    "description": "Aprenda a desconfiar e checar o que a IA te disse.",
+    "promptText": "Uma IA me deu esta explicação sobre [tópico]: [colar a resposta]. Revise como um professor cuidadoso. Separe o que está correto, o que está incompleto e o que pode estar errado ou inventado. Para cada ponto duvidoso, diga qual termo ou capítulo eu devo procurar (livro didático, site oficial ou outra fonte) e deixe claro o que você mesmo não tem certeza."
+  },
+  {
+    "id": "est-33",
+    "category": "Estudos",
+    "title": "Recomeço Depois de Nota Baixa",
+    "description": "Transforme uma nota ruim em um plano de melhora.",
+    "promptText": "Tirei [nota] na prova de [matéria] e fiquei bem desanimado(a). Os assuntos eram [assuntos] e acho que errei porque [motivo, ex.: não estudei a tempo, entendi errado, fiquei nervoso(a)]. Tenho cerca de [horas por dia] para estudar. Me ajude a entender o que deu errado sem me julgar e monte um plano de [tempo até a próxima prova] para eu recuperar esse conteúdo."
+  },
+  {
+    "id": "est-34",
+    "category": "Estudos",
+    "title": "Contas Rápidas sem Calculadora",
+    "description": "Treine cálculo mental para ganhar tempo nas provas.",
+    "promptText": "Nos vestibulares não posso usar calculadora e perco muito tempo com contas de [ex.: frações, porcentagem, potências, raiz quadrada, notação científica]. Me ensine 3 truques de cálculo mental para esse tipo de conta, com um exemplo de cada. Depois me passe 5 contas para treinar, uma de cada vez, esperando minha resposta antes de passar a próxima, e me corrija mostrando o atalho mais rápido."
   }
 ]
