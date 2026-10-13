@@ -4,6 +4,7 @@ import { brandConfig } from "../../config/brand.js";
 
 const navItems = [
   { to: "/", label: "Início", end: true },
+  { to: "/monte-seu-prompt", label: "Monte seu Prompt" },
   { to: "/banco-de-prompts", label: "Banco de Prompts" },
   { to: "/ferramentas", label: "Ferramentas de IA" },
   { to: "/conteudo", label: "Conteúdo" }
