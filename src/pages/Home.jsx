@@ -4,50 +4,52 @@ import { brandConfig } from "../config/brand.js";
 import PhotoGallery from "../components/UI/PhotoGallery.jsx";
 import TestimonialCard from "../components/UI/TestimonialCard.jsx";
 
+// Classes completas (não interpoladas) para o Tailwind detectá-las no build.
+const PILLAR_TONES = {
+  primary: "bg-primary/10 text-primary",
+  secondary: "bg-secondary/15 text-secondary",
+  accent: "bg-accent/15 text-accent"
+};
+
 export default function Home() {
-  const { about, contact, gallery, testimonials, impactSection } = institucional;
+  const { about, aboutSection, pillars, contact, gallery, testimonials, impactSection } =
+    institucional;
 
   return (
     <div className="font-body text-gray-800">
       {/* Hero */}
-      <section className="relative overflow-hidden">
+      <section className="relative overflow-hidden bg-primary">
         <div
           aria-hidden="true"
-          className="absolute inset-0 bg-gradient-to-br from-primary via-primary to-secondary"
+          className="absolute -top-24 -right-20 h-72 w-72 rounded-full bg-white/25 blur-3xl"
         />
         <div
           aria-hidden="true"
-          className="absolute -top-24 -right-20 h-72 w-72 rounded-full bg-secondary/25 blur-3xl"
-        />
-        <div
-          aria-hidden="true"
-          className="absolute -bottom-24 -left-20 h-72 w-72 rounded-full bg-secondary/30 blur-3xl"
+          className="absolute -bottom-24 -left-20 h-72 w-72 rounded-full bg-secondary/25 blur-3xl"
         />
 
-        <div className="container-page relative grid gap-12 py-20 text-white md:grid-cols-[1.2fr_1fr] md:items-center md:py-28">
-          <div className="space-y-7">
-            <span className="inline-flex items-center rounded-full border border-white/20 bg-white/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-white/85">
+        <div className="container-page relative grid gap-12 py-14 text-ink md:grid-cols-[1.2fr_1fr] md:items-center md:py-24">
+          <div className="space-y-6">
+            <span className="inline-flex items-center rounded-full border border-ink/15 bg-white/30 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-ink/80">
               IEEE Computer Society — USP São Carlos
             </span>
 
-            <h1 className="font-heading text-4xl font-extrabold leading-tight md:text-5xl text-nink">
+            <h1 className="font-heading text-4xl font-extrabold leading-tight text-ink md:text-5xl">
               {about.title}
             </h1>
 
-            <p className="max-w-2xl text-lg leading-relaxed text-white/90 text-muted">
-              {about.description}
-            </p>
+            <p className="max-w-xl text-lg leading-relaxed text-ink/80">{about.tagline}</p>
 
             <div className="flex flex-wrap gap-3">
               <Link
                 to="/banco-de-prompts"
-                className="inline-flex items-center justify-center rounded-lg bg-secondary px-6 py-3 font-heading text-sm font-bold uppercase tracking-wide text-nink shadow-card transition-colors duration-150 ease-out hover:bg-amber-400 focus-visible:bg-amber-400 focus-visible:outline-none"
+                className="inline-flex items-center justify-center rounded-lg bg-secondary px-6 py-3 font-heading text-sm font-bold uppercase tracking-wide text-nink shadow-card transition-colors duration-150 ease-out hover:bg-secondary/90 focus-visible:bg-secondary/90 focus-visible:outline-none active:bg-secondary/80"
               >
                 Explorar prompts
               </Link>
               <Link
                 to="/ferramentas"
-                className="inline-flex items-center justify-center rounded-lg border-2 border-white/70 px-6 py-3 font-heading text-sm font-bold uppercase tracking-wide text-white transition-colors duration-150 ease-out hover:border-white hover:bg-white/10 focus-visible:bg-white/10 focus-visible:outline-none"
+                className="inline-flex items-center justify-center rounded-lg border-2 border-ink/70 px-6 py-3 font-heading text-sm font-bold uppercase tracking-wide text-ink transition-colors duration-150 ease-out hover:border-ink hover:bg-white/30 focus-visible:bg-white/30 focus-visible:outline-none active:bg-white/40"
               >
                 Conhecer ferramentas
               </Link>
@@ -55,17 +57,17 @@ export default function Home() {
           </div>
 
           <div className="relative hidden md:block">
-            <div className="absolute inset-0 rounded-3xl bg-white/5 backdrop-blur-md" />
-            <div className="relative flex flex-col items-center gap-6 rounded-3xl border border-white/20 p-10 text-center">
+            <div className="absolute inset-0 rounded-3xl bg-white/30 backdrop-blur-md" />
+            <div className="relative flex flex-col items-center gap-6 rounded-3xl border border-white/50 p-10 text-center">
               <img
-                src={brandConfig.logos.iAgora}
+                src={brandConfig.logos.main}
                 alt="Logo do projeto"
                 className="h-28 w-auto drop-shadow-lg"
               />
-              <p className="font-heading text-xl font-bold leading-tight text-white">
+              <p className="font-heading text-xl font-bold leading-tight text-ink">
                 Letramento em IA
               </p>
-              <p className="text-sm leading-relaxed text-white/80">
+              <p className="text-sm leading-relaxed text-ink/75">
                 Da Engenharia de Prompt à compreensão das LLMs por baixo dos panos.
               </p>
             </div>
@@ -73,32 +75,26 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Pillars */}
-      <section className="container-page py-16 md:py-20">
+      {/* Sobre + Pilares */}
+      <section className="container-page space-y-10 py-16 md:py-20">
+        <div className="max-w-3xl space-y-4">
+          <span className="font-heading text-xs font-bold uppercase tracking-[0.3em] text-secondary">
+            {aboutSection.label}
+          </span>
+          <h2 className="font-heading text-3xl font-bold text-ink md:text-4xl">
+            {aboutSection.heading}
+          </h2>
+          <p className="font-body text-base leading-relaxed text-gray-600">{about.description}</p>
+        </div>
+
         <div className="grid gap-6 md:grid-cols-3">
-          {[
-            {
-              label: "Ético",
-              text: "Uso crítico e responsável da Inteligência Artificial Generativa.",
-              tint: "bg-primary/10 text-primary"
-            },
-            {
-              label: "Didático",
-              text: "Técnica T.I.C. e analogias lúdicas para destravar o aprendizado.",
-              tint: "bg-secondary/15 text-secondary"
-            },
-            {
-              label: "Prático",
-              text: "Prompts prontos para estudos, vestibular e produtividade diária.",
-              tint: "bg-accent/15 text-accent"
-            }
-          ].map((pillar) => (
+          {pillars.map((pillar) => (
             <div
               key={pillar.label}
               className="rounded-2xl border border-gray-200 bg-white p-6 shadow-card"
             >
               <span
-                className={`inline-flex items-center rounded-full px-3 py-1 text-xs font-bold uppercase tracking-wider ${pillar.tint}`}
+                className={`inline-flex items-center rounded-full px-3 py-1 text-xs font-bold uppercase tracking-wider ${PILLAR_TONES[pillar.tone]}`}
               >
                 {pillar.label}
               </span>
@@ -190,14 +186,14 @@ export default function Home() {
                 href={contact.instagram}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 rounded-lg bg-secondary px-6 py-3 font-heading text-sm font-bold uppercase tracking-wide text-nink shadow-card transition-colors duration-150 ease-out hover:bg-amber-400 focus-visible:bg-amber-400 focus-visible:outline-none"
+                className="inline-flex items-center justify-center gap-2 rounded-lg bg-secondary px-6 py-3 font-heading text-sm font-bold uppercase tracking-wide text-nink shadow-card transition-colors duration-150 ease-out hover:bg-secondary/90 focus-visible:bg-secondary/90 focus-visible:outline-none active:bg-secondary/80"
               >
                 Seguir no Instagram
                 <span aria-hidden="true">↗</span>
               </a>
               <a
                 href={`mailto:${contact.email}`}
-                className="inline-flex items-center justify-center gap-2 rounded-lg border-2 border-primary px-6 py-3 font-heading text-sm font-bold uppercase tracking-wide text-primary transition-colors duration-150 ease-out hover:bg-primary hover:text-white focus-visible:bg-primary focus-visible:text-white focus-visible:outline-none"
+                className="inline-flex items-center justify-center gap-2 rounded-lg border-2 border-primary px-6 py-3 font-heading text-sm font-bold uppercase tracking-wide text-primary transition-colors duration-150 ease-out hover:bg-primary hover:text-ink focus-visible:bg-primary focus-visible:text-ink active:bg-primary/90 focus-visible:outline-none"
               >
                 Enviar e-mail
               </a>

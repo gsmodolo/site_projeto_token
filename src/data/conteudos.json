@@ -3,10 +3,26 @@
     "tag": "Material Didático",
     "title": "Apresentações e Slides",
     "description": "Explore os slides utilizados nas aulas e palestras.",
-    "originalLinks": {
-      "principais": "https://docs.google.com/presentation/d/1qrBrIQVn33PfSRv0QQbEVF6-LOTFiDhW/edit?usp=sharing&ouid=113689100494521751253&rtpof=true&sd=true",
-      "complexos": "https://docs.google.com/presentation/d/1bzbFbtCMdgQh_ihOFW24I8FCWBluGADk/edit?usp=sharing&ouid=113689100494521751253&rtpof=true&sd=true"
-    }
+    "presentations": [
+      {
+        "id": "principais",
+        "title": "Apresentação Principal",
+        "label": "Principal",
+        "folder": "principais",
+        "totalSlides": 53,
+        "coverSlide": 4,
+        "originalUrl": "https://docs.google.com/presentation/d/1qrBrIQVn33PfSRv0QQbEVF6-LOTFiDhW/edit?usp=sharing&ouid=113689100494521751253&rtpof=true&sd=true"
+      },
+      {
+        "id": "complexos",
+        "title": "Apresentação Aprofundada (versão FATEC)",
+        "label": "Aprofundada",
+        "folder": "complexos",
+        "totalSlides": 61,
+        "coverSlide": 4,
+        "originalUrl": "https://docs.google.com/presentation/d/1bzbFbtCMdgQh_ihOFW24I8FCWBluGADk/edit?usp=sharing&ouid=113689100494521751253&rtpof=true&sd=true"
+      }
+    ]
   },
   "recommendedVideos": [
     {
@@ -44,7 +60,7 @@
       "title": "UNESCO: Guia de IA Generativa na Educação",
       "category": "Leitura / Artigo",
       "description": "Diretrizes oficiais da UNESCO sobre o uso ético, inclusivo e responsável de ferramentas de IA na rotina de estudantes e escolas.",
-      "url": "https://unesdoc.unesco.org/"
+      "url": "https://unesdoc.unesco.org/ark:/48223/pf0000390241"
     }
   ]
 }

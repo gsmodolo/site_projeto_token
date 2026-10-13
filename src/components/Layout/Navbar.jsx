@@ -48,7 +48,7 @@ export default function Navbar() {
           className="flex items-center gap-3 focus-visible:outline-none"
         >
           <img
-            src={brandConfig.logos.iAgora}
+            src={brandConfig.logos.main}
             alt="Logo do projeto"
             className="h-14 w-auto"
           />

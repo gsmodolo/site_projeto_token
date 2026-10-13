@@ -1,6 +1,5 @@
 export const brandConfig = {
-  projectName: "Projeto IAgora",
-  // src/config/brand.js
+  projectName: "Projeto Token",
   theme: {
     primary: "#FFA300",
     secondary: "#8B5D33",
@@ -15,13 +14,12 @@ export const brandConfig = {
     body: "'Open Sans', sans-serif"
   },
   logos: {
-  main: "/brand_assets/logo-projeto.png",
+  main: "/brand_assets/iagora_logo.png", // arte atual já traz o nome Token
   computerSocietyBlack: "/brand_assets/cs_logo_black.png",
   computerSocietyChapterWhite: "/brand_assets/cs_logo_capitulo_branco.png",
   computerSocietyChapterBlack: "/brand_assets/cs_logo_capitulo_preto.png",
   computerSocietyOrange: "/brand_assets/cs_logo_orange.png",
   computerSocietyWhite: "/brand_assets/cs_logo_white.png",
-  iAgora: "/brand_assets/iagora_logo.png",
   ieee: "/brand_assets/ieee_logo.png",
   ieeeRamoBlue: "/brand_assets/ieee_ramo_logo_azul.png",
   ieeeRamoWhite: "/brand_assets/ieee_ramo_logo_branco.png"
