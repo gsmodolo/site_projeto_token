@@ -1,0 +1,20 @@
+[
+  {
+    "id": "chatgpt",
+    "name": "ChatGPT",
+    "icon": "/brand_assets/ia/chatgpt.svg",
+    "urlTemplate": "https://chatgpt.com/?q={prompt}"
+  },
+  {
+    "id": "claude",
+    "name": "Claude",
+    "icon": "/brand_assets/ia/claude.svg",
+    "urlTemplate": "https://claude.ai/new?q={prompt}"
+  },
+  {
+    "id": "perplexity",
+    "name": "Perplexity",
+    "icon": "/brand_assets/ia/perplexity.svg",
+    "urlTemplate": "https://www.perplexity.ai/search?q={prompt}"
+  }
+]

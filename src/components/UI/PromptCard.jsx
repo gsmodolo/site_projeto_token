@@ -1,38 +1,28 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useId, useState } from "react";
+import usePromptTemplate from "../../hooks/usePromptTemplate.js";
+import PromptPreview from "./PromptPreview.jsx";
+import PromptFields, { slotInputId } from "./PromptFields.jsx";
+import SendToAI from "./SendToAI.jsx";
 
 export default function PromptCard({ title, description, promptText, category }) {
-  const [copied, setCopied] = useState(false);
-  const [error, setError] = useState(false);
-  const timerRef = useRef(null);
+  const baseId = useId();
+  const panelId = `${baseId}-campos`;
+  const { segments, slots, values, setValue, filledText, missingCount } =
+    usePromptTemplate(promptText);
+  const [isEditing, setIsEditing] = useState(false);
+  const [pendingFocus, setPendingFocus] = useState(null);
 
+  // Foca o campo só depois que o painel aparece no DOM.
   useEffect(() => {
-    return () => {
-      if (timerRef.current) {
-        clearTimeout(timerRef.current);
-      }
-    };
-  }, []);
+    if (pendingFocus === null) return;
+    document.getElementById(slotInputId(baseId, pendingFocus))?.focus();
+    setPendingFocus(null);
+  }, [pendingFocus, baseId]);
 
-  async function handleCopy() {
-    try {
-      if (navigator.clipboard?.writeText) {
-        await navigator.clipboard.writeText(promptText);
-      } else {
-        throw new Error("Clipboard API indisponível");
-      }
-      setError(false);
-      setCopied(true);
-      if (timerRef.current) clearTimeout(timerRef.current);
-      timerRef.current = setTimeout(() => setCopied(false), 2000);
-    } catch (err) {
-      setCopied(false);
-      setError(true);
-      if (timerRef.current) clearTimeout(timerRef.current);
-      timerRef.current = setTimeout(() => setError(false), 2500);
-    }
+  function focusSlot(index) {
+    setIsEditing(true);
+    setPendingFocus(index);
   }
-
-  const buttonLabel = error ? "Falha ao copiar" : copied ? "Copiado!" : "Copiar prompt";
 
   return (
     <article className="group flex h-full flex-col rounded-2xl border border-gray-200 bg-white p-6 shadow-card transition-shadow duration-200 ease-out hover:shadow-cardHover">
@@ -42,40 +32,36 @@ export default function PromptCard({ title, description, promptText, category })
         </span>
       )}
 
-      <h3 className="font-heading text-lg font-bold leading-snug text-gray-900">
-        {title}
-      </h3>
+      <h3 className="font-heading text-lg font-bold leading-snug text-gray-900">{title}</h3>
 
-      <p className="mt-2 font-body text-sm leading-relaxed text-gray-600">
-        {description}
-      </p>
+      <p className="mt-2 font-body text-sm leading-relaxed text-gray-600">{description}</p>
 
-      <div className="mt-4 flex-1">
-        <pre className="max-h-44 overflow-y-auto whitespace-pre-line rounded-xl border border-gray-100 bg-gray-50 p-4 font-body text-[0.85rem] leading-relaxed text-gray-700">
-          {promptText}
-        </pre>
+      <div className="mt-4 flex-1 space-y-3">
+        <PromptPreview segments={segments} values={values} onSlotClick={focusSlot} />
+
+        {slots.length > 0 && (
+          <button
+            type="button"
+            onClick={() => setIsEditing((open) => !open)}
+            aria-expanded={isEditing}
+            aria-controls={panelId}
+            className="inline-flex items-center gap-1.5 font-heading text-xs font-bold uppercase tracking-wide text-secondary transition-colors hover:text-ink focus-visible:text-ink active:text-ink/70"
+          >
+            <span aria-hidden="true">{isEditing ? "▾" : "✎"}</span>
+            {isEditing ? "Ocultar campos" : `Preencher campos (${slots.length})`}
+          </button>
+        )}
+
+        {isEditing && (
+          <div id={panelId} className="rounded-xl border border-primary/30 bg-primary/5 p-4">
+            <PromptFields baseId={baseId} slots={slots} values={values} onChange={setValue} />
+          </div>
+        )}
       </div>
 
-      <button
-        type="button"
-        onClick={handleCopy}
-        aria-live="polite"
-        className={[
-          "mt-5 inline-flex items-center justify-center gap-2 rounded-lg px-5 py-2.5",
-          "font-heading text-sm font-bold uppercase tracking-wide",
-          "transition-colors duration-150 ease-out focus-visible:outline-none text-nink",
-          error
-            ? "bg-red-100 text-red-700"
-            : copied
-            ? "bg-emerald-500 text-white"
-            : "bg-secondary text-gray-900 hover:bg-amber-400 focus-visible:bg-amber-400"
-        ].join(" ")}
-      >
-        <span aria-hidden="true">
-          {error ? "!" : copied ? "✓" : "⧉"}
-        </span>
-        {buttonLabel}
-      </button>
+      <div className="mt-5">
+        <SendToAI text={filledText} missingCount={isEditing ? missingCount : 0} />
+      </div>
     </article>
   );
 }
