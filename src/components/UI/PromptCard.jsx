@@ -4,7 +4,14 @@ import PromptPreview from "./PromptPreview.jsx";
 import PromptFields, { slotInputId } from "./PromptFields.jsx";
 import SendToAI from "./SendToAI.jsx";
 
-export default function PromptCard({ title, description, promptText, category }) {
+export default function PromptCard({
+  title,
+  description,
+  promptText,
+  category,
+  isFavorite = false,
+  onToggleFavorite
+}) {
   const baseId = useId();
   const panelId = `${baseId}-campos`;
   const { segments, slots, values, setValue, filledText, missingCount } =
@@ -26,11 +33,29 @@ export default function PromptCard({ title, description, promptText, category })
 
   return (
     <article className="group flex h-full flex-col rounded-2xl border border-gray-200 bg-white p-6 shadow-card transition-shadow duration-200 ease-out hover:shadow-cardHover">
-      {category && (
-        <span className="mb-3 inline-flex w-fit items-center rounded-full bg-primary/10 px-3 py-1 font-heading text-[0.65rem] font-bold uppercase tracking-[0.18em] text-primary">
-          {category}
-        </span>
-      )}
+      <div className="mb-3 flex items-start justify-between gap-3">
+        {category && (
+          <span className="inline-flex w-fit items-center rounded-full bg-primary/10 px-3 py-1 font-heading text-[0.65rem] font-bold uppercase tracking-[0.18em] text-primary">
+            {category}
+          </span>
+        )}
+        {onToggleFavorite && (
+          <button
+            type="button"
+            onClick={onToggleFavorite}
+            aria-pressed={isFavorite}
+            aria-label={isFavorite ? `Remover "${title}" dos favoritos` : `Favoritar "${title}"`}
+            className={[
+              "-mr-2 -mt-1 ml-auto rounded-full px-2 py-1 text-2xl leading-none transition-colors duration-150",
+              isFavorite
+                ? "text-primary hover:text-primary/80 focus-visible:text-primary/80"
+                : "text-gray-300 hover:text-primary focus-visible:text-primary active:text-primary/80"
+            ].join(" ")}
+          >
+            <span aria-hidden="true">{isFavorite ? "★" : "☆"}</span>
+          </button>
+        )}
+      </div>
 
       <h3 className="font-heading text-lg font-bold leading-snug text-gray-900">{title}</h3>
 
