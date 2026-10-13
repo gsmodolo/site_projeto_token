@@ -48,10 +48,10 @@ export default function Home() {
                 Explorar prompts
               </Link>
               <Link
-                to="/ferramentas"
+                to="/monte-seu-prompt"
                 className="inline-flex items-center justify-center rounded-lg border-2 border-ink/70 px-6 py-3 font-heading text-sm font-bold uppercase tracking-wide text-ink transition-colors duration-150 ease-out hover:border-ink hover:bg-white/30 focus-visible:bg-white/30 focus-visible:outline-none active:bg-white/40"
               >
-                Conhecer ferramentas
+                Monte seu prompt
               </Link>
             </div>
           </div>

@@ -9,8 +9,9 @@ A ideia começou presencial, com palestras e oficinas que já impactaram mais de
 > Projeto realizado na  **IEEE Computer Society - Ramo Estudantil USP São Carlos**.
  
 ## O que tem no site
-- **Banco de prompts prontos** — uma coleção de comandos testados pra estudos do dia a dia, vestibular e programação.
-- **Botão de copiar** — achou o prompt que queria? Um clique e tá na área de transferência.
+- **Monte seu prompt** — a técnica T.I.C. (Tarefa, Instruções, Contexto) na prática: preencha os pilares e veja o prompt se formando.
+- **Banco de prompts prontos** — uma coleção de comandos testados pra estudos do dia a dia e vestibular, com busca e favoritos.
+- **Prompt pronto pra usar** — preencha os campos entre colchetes, copie ou abra direto no ChatGPT, Claude ou Perplexity.
 - **Lista de ferramentas de IA** — uma curadoria de plataformas gratuitas que dão pra usar nos estudos.
 - **Galeria** — fotos das visitas nas escolas e depoimentos anônimos de alunos que participaram.
 ## Tecnologias usadas
@@ -71,4 +72,10 @@ npm run dev
 ```
  
 Pronto, o site vai estar rodando em `http://localhost:5173`.
+
+**4. Rodar os testes:**
+
+```bash
+npm test
+```
  

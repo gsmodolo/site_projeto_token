@@ -59,38 +59,60 @@ src/
   main.jsx                       # entry; aplica document.title a partir de brandConfig.projectName
   App.jsx                        # <Routes> envolvido pelo <Layout />
   index.css                      # @tailwind + base typography + utilitários .container-page e .scrollbar-hide
-  config/brand.js                # ÚNICA fonte de verdade White-label (não editar via componentes)
+  config/brand.js                # ÚNICA fonte de verdade White-label (logos.main = logo do projeto)
   data/
-    institucional.json           # consumido por Home (about, contact, impactSection, gallery, testimonials)
-    prompts_estudos.json         # consumido por PromptBank (aba Estudos, 17 itens)
-    prompts_vestibulares.json    # consumido por PromptBank (aba Vestibulares, 10 itens)
-    tools.json                   # consumido por AITools (4 itens)
+    institucional.json           # Home: about (title, tagline, description), aboutSection, pillars, contact, impactSection, gallery, testimonials
+    prompts_estudos.json         # PromptBank, aba Estudos (34 itens)
+    prompts_vestibulares.json    # PromptBank, aba Vestibulares (33 itens)
+    tools.json                   # AITools (13 itens)
+    conteudos.json               # Content: slidesSection.presentations[], vídeos, recursos
+    destinos_ia.json             # SendToAI: IAs com urlTemplate ("{prompt}") e ícone
+    tic.json                     # PromptBuilder: textos, pilares, extras, assemblyOrder, strength
+  lib/                           # funções puras + testes node:test (`npm test`)
+    promptTemplate.js            # [colchetes] -> segmentos/campos, fillTemplate, buildAiUrl
+    search.js                    # normalizeText (sem acentos), queryTerms, matchesTerms
+    ticPrompt.js                 # reducer do montador e montagem do prompt T.I.C.
+  hooks/
+    usePromptTemplate.js         # estado dos campos de um prompt
+    useCopyToClipboard.js        # copiar com fallback (execCommand) e status idle|copied|error
+    useFavorites.js              # ids favoritos em localStorage (tolerante a falhas)
+    useInView.js                 # IntersectionObserver
   components/
-    Layout/
-      Layout.jsx                 # wrapper min-h-screen + <Outlet />, fundo bg-gray-50
-      Navbar.jsx                 # sticky, NavLink + menu mobile com useState
-      Footer.jsx                 # faixa primary com 3 logos brancos + contato
+    Layout/                      # Layout, Navbar (navItems), Footer
     UI/
-      Tabs.jsx                   # tablist acessível (role="tab" + aria-selected)
-      PromptCard.jsx             # card com botão Copiar (clipboard + timer 2s)
-      ToolItem.jsx               # card de ferramenta externa (target=_blank rel=noopener)
-      TestimonialCard.jsx        # card de depoimento (blockquote + SVG aspas); prop `featured` para destaque
-      PhotoGallery.jsx           # carrossel horizontal scroll-snap com setas prev/next
+      Tabs.jsx                   # tablist acessível (← → trocam de aba); grade de 3 colunas no celular
+      PromptCard.jsx             # card: estrela de favorito, PromptPreview, PromptFields, SendToAI
+      PromptPreview.jsx          # texto com campos destacados e clicáveis
+      PromptFields.jsx           # um input por colchete (rótulos repetidos mostram contexto)
+      SendToAI.jsx               # Copiar + abrir em ChatGPT/Claude/Perplexity
+      SearchField.jsx            # busca controlada com limpar
+      SlideViewer.jsx            # modal de slides em portal (Esc/←/→, foco, scroll lock)
+      ToolItem.jsx, TestimonialCard.jsx, PhotoGallery.jsx
+    TIC/                         # PromptComparison, TicPillarField, ExtraTechnique, PromptStrength, TicPartsList
   pages/
-    Home.jsx                     # Hero + pilares + impacto (galeria carrossel + depoimentos) + contato
-    PromptBank.jsx               # owner do estado activeTab (estudos | vestibulares)
+    Home.jsx                     # Hero + Sobre/pilares + impacto (galeria + depoimentos) + contato
+    PromptBuilder.jsx            # Montador T.I.C. (useReducer com ticReducer)
+    PromptBank.jsx               # dono de activeTab, query e favoritos
     AITools.jsx                  # grid 2 colunas
+    Content.jsx                  # slides (SlideViewer), vídeos e recursos
 ```
 
 ## Rotas
 - `/` → `Home`
+- `/monte-seu-prompt` → `PromptBuilder`
 - `/banco-de-prompts` → `PromptBank`
 - `/ferramentas` → `AITools`
+- `/conteudo` → `Content`
 - `*` → `Navigate replace` para `/`
+
+## Testes
+- `npm test` roda `node --test "src/**/*.test.js"` (sem dependências). Toda lógica nova que não depende
+  do DOM vai para `src/lib/` com teste ao lado.
 
 ## Convenções de design já cabeadas
 - **Tokens Tailwind** (definidos em `tailwind.config.js`, alimentados por `brand.js`):
-  `bg-primary` / `text-primary` (IEEE Blue), `bg-secondary` (Orange — só CTAs e aba ativa), `bg-accent` (Cyan — detalhes), `text-ink`, `text-muted`.
+  `bg-primary` (laranja), `bg-secondary` (marrom — CTAs e aba ativa), `bg-accent` (azul — detalhes), `text-ink`, `text-nink`, `text-muted`.
+  Sobre `primary` use texto `ink` (escuro); `nink` (branco) só sobre `secondary` ou fundos escuros.
 - **Sombras**: `shadow-card` (cards em repouso) → `shadow-cardHover` (hover) → `shadow-floating` (elevação máxima). Tinta azulada do `primary` para coerência.
 - **Tipografia**: `font-heading` (Montserrat) em h1-h6 e botões; `font-body` (Open Sans) no corpo; `line-height: 1.7` global no `<body>`.
 - **Layout**: utilitário `.container-page` (max-w 1200px, padding responsivo) — usar sempre que precisar centralizar conteúdo. Utilitário `.scrollbar-hide` para ocultar scrollbar nativa em carrosséis.
@@ -106,11 +128,14 @@ src/
 - **Trocar nome do projeto**: editar `brandConfig.projectName` em `brand.js` — `document.title` é setado em `main.jsx` a partir desse campo. Nenhum componente exibe o nome diretamente.
 - **Editar textos da seção Impacto**: editar `institucional.json → impactSection` (label, heading, description, galleryHeading, testimonialsHeading).
 
-## PromptCard: contrato do botão Copiar
-- Usa `navigator.clipboard.writeText` dentro de `try/catch` (fallback de erro visível).
-- Timer de 2s mantido em `useRef`, limpado em `useEffect` cleanup para evitar setState após unmount.
-- 3 estados visuais: padrão (`bg-secondary`), copiado (`bg-emerald-500`), erro (`bg-red-100`). `aria-live="polite"` no botão.
-- `whitespace-pre-line` preserva quebras de prompts multi-linha (ex.: `vest-02`).
+## PromptCard / SendToAI: contrato
+- Cada `[colchete]` do `promptText` vira um campo próprio (por ocorrência, não por rótulo). Campos vazios
+  continuam como `[rótulo]` no texto final.
+- `SendToAI({ text, missingCount })`: Copiar (via `useCopyToClipboard`; estados padrão `bg-secondary`,
+  copiado `bg-emerald-600`, erro `bg-red-100`, `aria-live="polite"`) + links das IAs de `destinos_ia.json`.
+- Nova IA: adicionar objeto em `destinos_ia.json` com `urlTemplate` contendo `{prompt}` e ícone em
+  `public/brand_assets/ia/` (ícones atuais: Simple Icons, CC0).
+- Favoritos: `PromptCard` recebe `isFavorite`/`onToggleFavorite`; o estado mora no `PromptBank`.
 
 ## TestimonialCard: contrato do componente
 - Props: `{ quote, role, featured, className }`.
