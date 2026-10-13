@@ -1,29 +1,25 @@
 {
   "header": {
     "tag": "Monte seu prompt",
-    "title": "A técnica T.I.C. na prática",
-    "description": "Três pilares para a IA entender exatamente o que você precisa: Tarefa, Instruções e Contexto. Preencha, veja o prompt se formando e mande direto para a IA.",
-    "jumpLabel": "Montar o meu agora"
+    "title": "Monte seu prompt com a técnica T.I.C.",
+    "description": "Preencha os três campos. O prompt vai se formando enquanto você escreve, pronto para copiar ou abrir na IA."
   },
   "comparison": {
-    "heading": "Faz diferença? Compare.",
+    "heading": "Veja a diferença",
     "bad": {
-      "label": "Prompt sem técnica",
-      "text": "Me explique estequiometria",
-      "note": "A IA não sabe quem você é, o que você já sabe nem como quer a resposta. O resultado tende a ser uma explicação genérica de livro."
+      "label": "Sem a técnica",
+      "text": "Me explique estequiometria"
     },
     "good": {
-      "label": "Prompt com T.I.C.",
-      "note": "Mesma dúvida, mas agora a IA sabe para quem está explicando, em que papel e em que formato."
+      "label": "Com T.I.C."
     }
   },
   "builder": {
-    "heading": "Monte o seu",
     "previewHeading": "Seu prompt",
-    "emptyPreview": "Comece pela Tarefa: o prompt vai aparecendo aqui enquanto você escreve.",
-    "exampleButton": "Usar o exemplo do Homem-Aranha",
-    "resetButton": "Limpar tudo",
-    "extrasHeading": "Técnicas extras (opcionais)",
+    "emptyPreview": "Seu prompt aparece aqui.",
+    "exampleButton": "Ver um exemplo",
+    "resetButton": "Limpar",
+    "extrasHeading": "Técnicas extras (opcional)",
     "assemblyOrder": [
       "contexto",
       "persona",
@@ -39,7 +35,6 @@
       "letter": "T",
       "name": "Tarefa",
       "question": "O que a IA deve fazer?",
-      "explanation": "Defina o que fazer de forma direta (ex.: escreva um resumo).",
       "placeholder": "Ex.: Me explique esse conceito de forma didática.",
       "example": "Me explique esse conceito de forma didática."
     },
@@ -47,8 +42,7 @@
       "id": "instrucoes",
       "letter": "I",
       "name": "Instruções",
-      "question": "Como a resposta deve ser?",
-      "explanation": "Especifique como fazer: formato de tabela, tom, limite de palavras.",
+      "question": "Como você quer a resposta?",
       "placeholder": "Ex.: Use uma analogia com um filme e termine com um exercício.",
       "example": "Use uma analogia com o Homem-Aranha. Depois, me dê um exercício simples."
     },
@@ -57,7 +51,6 @@
       "letter": "C",
       "name": "Contexto",
       "question": "Quem é você e para que precisa?",
-      "explanation": "Forneça as informações de fundo: para quem é o texto? Qual o objetivo?",
       "placeholder": "Ex.: Sou aluno do 2º ano e tenho prova de Química na sexta.",
       "example": "Sou aluno do 2º ano e não entendo nada de estequiometria."
     }
@@ -65,9 +58,9 @@
   "extras": [
     {
       "id": "persona",
-      "name": "Persona: “Aja como…”",
+      "name": "Persona",
       "shortName": "Persona",
-      "hint": "Peça para a IA assumir um papel. Calibra o tom e a dificuldade da resposta.",
+      "hint": "Peça para a IA agir como alguém, por exemplo um professor.",
       "inputLabel": "Quem a IA deve ser?",
       "placeholder": "Ex.: um professor de Química divertido",
       "template": "Aja como {value}.",
@@ -75,25 +68,25 @@
     },
     {
       "id": "exemplos",
-      "name": "Dê exemplos (few-shot)",
+      "name": "Dar um exemplo",
       "shortName": "Exemplo",
-      "hint": "Mostre um exemplo do padrão que você quer. Ajuda a IA a entender regras difíceis de explicar.",
+      "hint": "Mostre um modelo do que você quer receber.",
       "inputLabel": "Cole um exemplo do que você quer",
       "placeholder": "Ex.: uma questão no estilo da FUVEST que você achou boa",
       "template": "Use este exemplo como modelo do que eu quero: {value}"
     },
     {
       "id": "passo-a-passo",
-      "name": "Peça o passo a passo",
+      "name": "Pedir passo a passo",
       "shortName": "Passo a passo",
-      "hint": "Força um raciocínio lógico e reduz erros, principalmente em contas e problemas.",
+      "hint": "Ajuda em contas e problemas.",
       "template": "Explique o raciocínio passo a passo."
     }
   ],
   "strength": [
     "Comece pela Tarefa",
-    "Bom começo: falta pouco",
-    "Quase lá: complete o último pilar",
-    "Prompt completo: T.I.C. aplicada!"
+    "Continue preenchendo",
+    "Falta um campo",
+    "Prompt completo"
   ]
 }

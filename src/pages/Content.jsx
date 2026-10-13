@@ -1,8 +1,11 @@
-import { useCallback, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
 import conteudosData from "../data/conteudos.json";
+import tools from "../data/tools.json";
 import SlideViewer, { slideSrc } from "../components/UI/SlideViewer.jsx";
+import ToolItem from "../components/UI/ToolItem.jsx";
 
-const { slidesSection, recommendedVideos, recommendedResources } = conteudosData;
+const { slidesSection, toolsSection, recommendedVideos, recommendedResources } = conteudosData;
 const { presentations } = slidesSection;
 const [mainPresentation, deepPresentation] = presentations;
 
@@ -39,6 +42,12 @@ function PresentationCover({ presentation, layoutClass, onOpen }) {
 
 export default function Content() {
   const [viewer, setViewer] = useState(null); // { id, slide } quando aberto
+  const { hash } = useLocation();
+
+  // O React Router não rola até a âncora sozinho (ex.: /conteudo#ferramentas).
+  useEffect(() => {
+    if (hash) document.getElementById(hash.slice(1))?.scrollIntoView();
+  }, [hash]);
 
   const activePresentation = viewer && presentations.find((p) => p.id === viewer.id);
   const total = activePresentation?.totalSlides ?? 1;
@@ -114,14 +123,39 @@ export default function Content() {
         />
       )}
 
+      <section id="ferramentas" className="scroll-mt-24 space-y-8">
+        <header className="max-w-2xl space-y-2">
+          <span className="font-heading text-xs font-bold uppercase tracking-[0.3em] text-primary">
+            {toolsSection.tag}
+          </span>
+          <h2 className="font-heading text-2xl font-bold text-gray-900 md:text-3xl">
+            {toolsSection.title}
+          </h2>
+          <p className="font-body text-base leading-relaxed text-gray-600">{toolsSection.description}</p>
+        </header>
+
+        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          {tools.map((tool) => (
+            <ToolItem
+              key={tool.id}
+              name={tool.name}
+              url={tool.url}
+              educationalUse={tool.educationalUse}
+            />
+          ))}
+        </div>
+      </section>
+
+      <hr className="border-gray-200" />
+
       {/* Seção de Vídeos Indicados */}
       <section className="space-y-8">
         <header className="space-y-2">
           <span className="font-heading text-xs font-bold uppercase tracking-[0.3em] text-primary">
-            Vídeos Indicados
+            Vídeos
           </span>
           <h2 className="font-heading text-2xl font-bold text-gray-900 md:text-3xl">
-            Recomendações para Assistir
+            Para assistir
           </h2>
         </header>
 
@@ -174,10 +208,10 @@ export default function Content() {
       <section className="space-y-8">
         <header className="space-y-2">
           <span className="font-heading text-xs font-bold uppercase tracking-[0.3em] text-primary">
-            Aprofunde seus estudos
+            Para ir além
           </span>
           <h2 className="font-heading text-2xl font-bold text-gray-900 md:text-3xl">
-            Cursos, Artigos e Leituras
+            Cursos e leituras
           </h2>
         </header>
 

@@ -64,8 +64,8 @@ src/
     institucional.json           # Home: about (title, tagline, description), aboutSection, pillars, contact, impactSection, gallery, testimonials
     prompts_estudos.json         # PromptBank, aba Estudos (34 itens)
     prompts_vestibulares.json    # PromptBank, aba Vestibulares (33 itens)
-    tools.json                   # AITools (13 itens)
-    conteudos.json               # Content: slidesSection.presentations[], vídeos, recursos
+    tools.json                   # Content, seção Ferramentas (13 itens)
+    conteudos.json               # Content: slidesSection.presentations[], toolsSection, vídeos, recursos
     destinos_ia.json             # SendToAI: IAs com urlTemplate ("{prompt}") e ícone
     tic.json                     # PromptBuilder: textos, pilares, extras, assemblyOrder, strength
   lib/                           # funções puras + testes node:test (`npm test`)
@@ -93,15 +93,14 @@ src/
     Home.jsx                     # Hero + Sobre/pilares + impacto (galeria + depoimentos) + contato
     PromptBuilder.jsx            # Montador T.I.C. (useReducer com ticReducer)
     PromptBank.jsx               # dono de activeTab, query e favoritos
-    AITools.jsx                  # grid 2 colunas
-    Content.jsx                  # slides (SlideViewer), vídeos e recursos
+    Content.jsx                  # slides (SlideViewer), ferramentas (#ferramentas), vídeos e recursos
 ```
 
 ## Rotas
 - `/` → `Home`
 - `/monte-seu-prompt` → `PromptBuilder`
 - `/banco-de-prompts` → `PromptBank`
-- `/ferramentas` → `AITools`
+- `/ferramentas` → redireciona para `/conteudo#ferramentas` (links antigos)
 - `/conteudo` → `Content`
 - `*` → `Navigate replace` para `/`
 
@@ -121,7 +120,7 @@ src/
 
 ## Padrão White-label (como adicionar conteúdo novo)
 - **Novo prompt**: adicionar entrada em `src/data/prompts_estudos.json` ou `prompts_vestibulares.json` — UI atualiza sozinha (contagem da aba inclusive).
-- **Nova ferramenta**: adicionar em `src/data/tools.json`.
+- **Nova ferramenta**: adicionar em `src/data/tools.json` (aparece na seção Ferramentas da página Conteúdo).
 - **Novo depoimento**: adicionar objeto em `institucional.json → testimonials[]` com `{ "quote", "role": "Aluno(a) <Instituição>" }`. Para destaque visual, incluir `"featured": true` (apenas 1 por vez). O card featured ocupa largura total do grid com fundo tintado `bg-primary/5`.
 - **Nova foto de visita**: adicionar imagem em `public/fotos_visitas/` e objeto `{ "src", "alt" }` em `institucional.json → gallery[]`. O carrossel atualiza sozinho.
 - **Trocar logo / cor / fonte**: editar `src/config/brand.js`. Nada nos componentes precisa mudar.

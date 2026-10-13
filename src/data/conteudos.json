@@ -1,8 +1,8 @@
 {
   "slidesSection": {
-    "tag": "Material Didático",
-    "title": "Apresentações e Slides",
-    "description": "Explore os slides utilizados nas aulas e palestras.",
+    "tag": "Slides",
+    "title": "Slides das palestras",
+    "description": "Os slides que usamos nas visitas, para rever com calma.",
     "presentations": [
       {
         "id": "principais",
@@ -24,18 +24,23 @@
       }
     ]
   },
+  "toolsSection": {
+    "tag": "Ferramentas",
+    "title": "IAs gratuitas para estudar",
+    "description": "Cada uma se sai melhor em um tipo de tarefa. Veja qual usar em cada situação."
+  },
   "recommendedVideos": [
     {
       "id": "video-1",
       "title": "O que são Large Language Models (LLMs)?",
-      "description": "Uma visão didática e conceitual sobre como modelos de linguagem processam informações e geram texto a partir de padrões estatísticos.",
+      "description": "Explica de forma simples como um modelo de linguagem aprende padrões nos textos e monta a resposta palavra por palavra.",
       "youtubeUrl": "https://www.youtube.com/watch?v=LPZh9BOjkQs",
       "embedUrl": "https://www.youtube.com/embed/LPZh9BOjkQs"
     },
     {
       "id": "video-2",
       "title": "Boas Práticas e Engenharia de Prompt",
-      "description": "Entenda como estruturar comandos com clareza, contexto e persona para obter respostas mais precisas e úteis nos estudos.",
+      "description": "Como escrever pedidos claros para a IA, com contexto e persona, para receber respostas mais úteis.",
       "youtubeUrl": "https://www.youtube.com/watch?v=jC4v5AS4RIM",
       "embedUrl": "https://www.youtube.com/embed/jC4v5AS4RIM"
     }
@@ -43,23 +48,23 @@
   "recommendedResources": [
     {
       "id": "res-1",
-      "title": "Learn Prompting — Guia Gratuito",
-      "category": "Curso / Documentação",
-      "description": "Um dos cursos abertos mais completos e acessíveis do mundo sobre Engenharia de Prompt, do básico ao avançado.",
+      "title": "Learn Prompting",
+      "category": "Curso",
+      "description": "Curso gratuito sobre engenharia de prompt que começa do zero e vai até técnicas avançadas.",
       "url": "https://learnprompting.org/"
     },
     {
       "id": "res-2",
-      "title": "Elements of AI — Universidade de Helsinque",
-      "category": "Curso Gratuito",
-      "description": "Série de cursos gratuitos criados para desmistificar a Inteligência Artificial para qualquer pessoa, sem necessidade de código.",
+      "title": "Elements of AI",
+      "category": "Curso",
+      "description": "Curso online gratuito da Universidade de Helsinque que explica o que é IA sem exigir programação.",
       "url": "https://www.elementsofai.com/"
     },
     {
       "id": "res-3",
-      "title": "UNESCO: Guia de IA Generativa na Educação",
-      "category": "Leitura / Artigo",
-      "description": "Diretrizes oficiais da UNESCO sobre o uso ético, inclusivo e responsável de ferramentas de IA na rotina de estudantes e escolas.",
+      "title": "Guia da UNESCO sobre IA na educação",
+      "category": "Leitura",
+      "description": "O guia da UNESCO sobre como escolas e alunos podem usar IA generativa com responsabilidade.",
       "url": "https://unesdoc.unesco.org/ark:/48223/pf0000390241"
     }
   ]

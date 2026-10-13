@@ -25,8 +25,8 @@ export default function Footer() {
             ))}
           </div>
           <p className="font-body text-sm leading-relaxed text-white/80 max-w-md">
-            Iniciativa universitária de letramento em Inteligência Artificial Generativa,
-            promovendo o uso ético, crítico e eficiente da tecnologia.
+            Projeto da IEEE Computer Society da USP São Carlos que ensina estudantes a usar IA
+            nos estudos.
           </p>
         </div>
 
@@ -61,8 +61,7 @@ export default function Footer() {
 
       <div className="border-t border-white/15">
         <div className="container-page flex flex-col gap-2 py-4 text-xs text-white/70 md:flex-row md:items-center md:justify-between">
-          <span>© {year} — Todos os direitos reservados.</span>
-          <span>Construído com propósito educacional.</span>
+          <span>© {year} {brandConfig.projectName}</span>
         </div>
       </div>
     </footer>

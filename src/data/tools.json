@@ -3,61 +3,61 @@
     "id": "chatgpt",
     "name": "ChatGPT (OpenAI)",
     "url": "https://chat.openai.com",
-    "educationalUse": "Excelente para conversação geral, explicações passo a passo e brainstorming de ideias para trabalhos escolares."
+    "educationalUse": "Bom para tirar dúvidas, pedir explicações passo a passo e ter ideias para trabalhos. Também dá para conversar por voz."
   },
   {
     "id": "claude",
     "name": "Claude (Anthropic)",
     "url": "https://claude.ai",
-    "educationalUse": "Muito forte em análise de textos longos, interpretação de PDFs (artigos científicos) e redação com tom mais humano e ético."
+    "educationalUse": "Bom para ler textos longos e PDFs, como artigos científicos, e para revisar redações."
   },
   {
     "id": "gemini",
     "name": "Gemini (Google)",
     "url": "https://gemini.google.com",
-    "educationalUse": "Integrado ao ecossistema Google, possui acesso fácil à internet em tempo real para pesquisas e atualidades (bom para vestibulares)."
+    "educationalUse": "Funciona junto com os apps do Google e pesquisa na internet, o que ajuda com atualidades. Tem o modo Aprendizado Guiado, que explica sem entregar a resposta pronta."
   },
   {
     "id": "perplexity",
     "name": "Perplexity AI",
     "url": "https://www.perplexity.ai",
-    "educationalUse": "Funciona como um motor de busca avançado que sempre cita as fontes da informação. Fundamental para pesquisas escolares e combate a alucinações."
+    "educationalUse": "Um buscador que responde com IA e mostra de onde tirou cada informação. Ajuda muito em pesquisa escolar, mas vale abrir as fontes para conferir."
   },
   {
     "id": "notebooklm",
     "name": "NotebookLM",
     "url": "https://notebooklm.google.com",
-    "educationalUse": "Permite adicionar PDFs, textos, slides e outras fontes para fazer perguntas e estudar usando o próprio material fornecido."
+    "educationalUse": "Você coloca seus PDFs, slides e anotações e faz perguntas só sobre esse material. Também gera resumos e até um podcast com o conteúdo."
   },
   {
     "id": "gamma",
     "name": "Gamma",
     "url": "https://gamma.app",
-    "educationalUse": "Ajuda a transformar ideias e conteúdos em apresentações, documentos e materiais visuais usando IA."
+    "educationalUse": "Monta uma apresentação a partir de um texto ou de um tema. Serve como primeiro rascunho dos slides."
   },
   {
     "id": "canva-ai",
     "name": "Canva",
     "url": "https://www.canva.com",
-    "educationalUse": "Ferramenta de design com recursos de IA para criar apresentações, infográficos, mapas mentais, pôsteres e materiais escolares."
+    "educationalUse": "Para fazer slides, cartazes, mapas mentais e infográficos. Os recursos de IA ajudam a montar o layout."
   },
   {
     "id": "quizlet",
     "name": "Quizlet",
     "url": "https://quizlet.com",
-    "educationalUse": "Plataforma de estudo baseada em flashcards, testes e atividades de revisão, com recursos de IA para transformar conteúdos em materiais de estudo."
+    "educationalUse": "Flashcards e testes para revisar a matéria. A IA transforma suas anotações em cartões de estudo."
   },
   {
     "id": "wolframalpha",
     "name": "Wolfram Alpha",
     "url": "https://www.wolframalpha.com",
-    "educationalUse": "Ferramenta computacional útil para matemática, física, estatística e outras áreas que envolvem cálculos e análise de dados."
+    "educationalUse": "Resolve contas de matemática, física e estatística e desenha gráficos. A resolução passo a passo completa é da versão paga."
   },
   {
     "id": "mec-enem",
     "name": "MEC Enem (Ministério da Educação)",
     "url": "https://app.mecenem.mec.gov.br",
-    "educationalUse": "App oficial e gratuito do MEC (login gov.br). Tem simulados com questões de ENEMs anteriores, plano de estudos montado conforme o tempo até a prova e correção de redação: você tira foto da folha escrita à mão e recebe uma nota estimada por competência, com dicas. Use a nota como termômetro, não como sentença."
+    "educationalUse": "App oficial e gratuito do MEC (login gov.br). Tem simulados com questões de ENEMs anteriores, plano de estudos montado conforme o tempo até a prova e correção de redação: você tira foto da folha escrita à mão e recebe uma nota estimada por competência, com dicas. Use a nota como referência, sem levar ao pé da letra."
   },
   {
     "id": "languagetool",

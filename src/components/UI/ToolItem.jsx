@@ -28,7 +28,7 @@ export default function ToolItem({ name, url, educationalUse }) {
         href={url}
         target="_blank"
         rel="noopener noreferrer"
-        className="mt-6 inline-flex w-fit items-center gap-2 rounded-lg border-2 border-primary px-5 py-2.5 font-heading text-sm font-bold uppercase tracking-wide text-primary transition-colors duration-150 ease-out hover:bg-primary hover:text-white focus-visible:bg-primary focus-visible:text-white focus-visible:outline-none"
+        className="mt-6 inline-flex w-fit items-center gap-2 rounded-lg border-2 border-primary px-5 py-2.5 font-heading text-sm font-bold uppercase tracking-wide text-primary transition-colors duration-150 ease-out hover:bg-primary hover:text-ink focus-visible:bg-primary focus-visible:text-ink focus-visible:outline-none active:bg-primary/80"
       >
         Acessar ferramenta
         <span aria-hidden="true">↗</span>

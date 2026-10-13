@@ -12,7 +12,7 @@ A ideia começou presencial, com palestras e oficinas que já impactaram mais de
 - **Monte seu prompt** — a técnica T.I.C. (Tarefa, Instruções, Contexto) na prática: preencha os pilares e veja o prompt se formando.
 - **Banco de prompts prontos** — uma coleção de comandos testados pra estudos do dia a dia e vestibular, com busca e favoritos.
 - **Prompt pronto pra usar** — preencha os campos entre colchetes, copie ou abra direto no ChatGPT, Claude ou Perplexity.
-- **Lista de ferramentas de IA** — uma curadoria de plataformas gratuitas que dão pra usar nos estudos.
+- **Conteúdos** — slides das palestras, uma lista de IAs gratuitas pra estudar, vídeos e cursos.
 - **Galeria** — fotos das visitas nas escolas e depoimentos anônimos de alunos que participaram.
 ## Tecnologias usadas
  
@@ -45,7 +45,7 @@ Pra isso, está tudo separado em dois lugares:
 │   │   ├── prompts_estudos.json     # Prompts pra estudos
 │   │   ├── prompts_vestibulares.json
 │   │   └── tools.json               # Lista de ferramentas de IA
-│   ├── pages/               # Páginas (Home, PromptBank, AITools)
+│   ├── pages/               # Páginas (Home, PromptBuilder, PromptBank, Content)
 │   ├── App.jsx              # Rotas
 │   └── main.jsx             # Entrypoint
 ```

@@ -35,28 +35,16 @@ export default function PromptBuilder() {
 
   return (
     <div className="container-page space-y-16 py-12 md:py-16">
-      <header className="max-w-3xl space-y-4">
-        <span className="font-heading text-xs font-bold uppercase tracking-[0.3em] text-primary">
-          {header.tag}
-        </span>
-        <h1 className="font-heading text-3xl font-bold text-ink md:text-4xl">{header.title}</h1>
-        <p className="font-body text-base leading-relaxed text-gray-600">{header.description}</p>
-        <a
-          href="#montar"
-          className="inline-flex items-center gap-2 rounded-lg bg-secondary px-6 py-3 font-heading text-sm font-bold uppercase tracking-wide text-nink shadow-card transition-colors duration-150 hover:bg-secondary/90 focus-visible:bg-secondary/90 focus-visible:outline-none active:bg-secondary/80"
-        >
-          {header.jumpLabel} <span aria-hidden="true">↓</span>
-        </a>
-      </header>
-
-      <PromptComparison comparison={comparison} goodParts={EXAMPLE_PARTS} />
-
-      <section id="montar" aria-labelledby="montar-titulo" className="scroll-mt-24 space-y-6">
-        <div className="flex flex-wrap items-end justify-between gap-4">
-          <h2 id="montar-titulo" className="font-heading text-2xl font-bold text-ink md:text-3xl">
-            {builder.heading}
-          </h2>
-          <div className="flex flex-wrap gap-2">
+      <section aria-labelledby="montar-titulo" className="space-y-6">
+        <header className="max-w-3xl space-y-3">
+          <span className="font-heading text-xs font-bold uppercase tracking-[0.3em] text-primary">
+            {header.tag}
+          </span>
+          <h1 id="montar-titulo" className="font-heading text-3xl font-bold text-ink md:text-4xl">
+            {header.title}
+          </h1>
+          <p className="font-body text-base leading-relaxed text-gray-600">{header.description}</p>
+          <div className="flex flex-wrap gap-2 pt-1">
             <button
               type="button"
               onClick={() => dispatch({ type: "fillExample", config: tic })}
@@ -72,7 +60,7 @@ export default function PromptBuilder() {
               {builder.resetButton}
             </button>
           </div>
-        </div>
+        </header>
 
         <div className="grid gap-8 lg:grid-cols-[1.3fr_1fr] lg:items-start">
           <div className="space-y-4">
@@ -85,19 +73,27 @@ export default function PromptBuilder() {
               />
             ))}
 
-            <h3 className="pt-4 font-heading text-lg font-bold text-ink">{builder.extrasHeading}</h3>
-            <div className="space-y-3">
-              {extras.map((extra) => (
-                <ExtraTechnique
-                  key={extra.id}
-                  extra={extra}
-                  enabled={state.extras[extra.id].enabled}
-                  value={state.extras[extra.id].value}
-                  onToggle={() => dispatch({ type: "toggleExtra", id: extra.id })}
-                  onChange={(value) => dispatch({ type: "setExtraValue", id: extra.id, value })}
-                />
-              ))}
-            </div>
+            {/* Recolhido por padrão: o essencial é o T.I.C.; os extras ficam para quem quiser. */}
+            <details className="group rounded-2xl border border-gray-200 bg-white shadow-card">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-3 rounded-2xl px-5 py-4 font-heading text-base font-bold text-ink transition-colors hover:bg-gray-50 focus-visible:bg-gray-50 active:bg-gray-100 [&::-webkit-details-marker]:hidden">
+                {builder.extrasHeading}
+                <span aria-hidden="true" className="text-primary transition-transform duration-150 group-open:rotate-45">
+                  ＋
+                </span>
+              </summary>
+              <div className="space-y-3 px-5 pb-5">
+                {extras.map((extra) => (
+                  <ExtraTechnique
+                    key={extra.id}
+                    extra={extra}
+                    enabled={state.extras[extra.id].enabled}
+                    value={state.extras[extra.id].value}
+                    onToggle={() => dispatch({ type: "toggleExtra", id: extra.id })}
+                    onChange={(value) => dispatch({ type: "setExtraValue", id: extra.id, value })}
+                  />
+                ))}
+              </div>
+            </details>
           </div>
 
           <aside
@@ -123,6 +119,8 @@ export default function PromptBuilder() {
           </aside>
         </div>
       </section>
+
+      <PromptComparison comparison={comparison} goodParts={EXAMPLE_PARTS} />
 
       {/* Celular: o preview fica abaixo do formulário, então um atalho flutuante leva até ele. */}
       {promptText && !isPreviewVisible && (

@@ -31,7 +31,7 @@ export default function Home() {
         <div className="container-page relative grid gap-12 py-14 text-ink md:grid-cols-[1.2fr_1fr] md:items-center md:py-24">
           <div className="space-y-6">
             <span className="inline-flex items-center rounded-full border border-ink/15 bg-white/30 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-ink/80">
-              IEEE Computer Society — USP São Carlos
+              IEEE Computer Society · USP São Carlos
             </span>
 
             <h1 className="font-heading text-4xl font-extrabold leading-tight text-ink md:text-5xl">
@@ -68,7 +68,7 @@ export default function Home() {
                 Letramento em IA
               </p>
               <p className="text-sm leading-relaxed text-ink/75">
-                Da Engenharia de Prompt à compreensão das LLMs por baixo dos panos.
+                Entenda as LLMs e escreva prompts melhores.
               </p>
             </div>
           </div>
@@ -171,14 +171,13 @@ export default function Home() {
           <div className="relative grid gap-8 md:grid-cols-[1.4fr_1fr] md:items-center">
             <div className="space-y-4">
               <span className="font-heading text-xs font-bold uppercase tracking-[0.3em] text-primary">
-                Vamos conversar
+                Contato
               </span>
               <h2 className="font-heading text-3xl font-bold text-ink md:text-4xl">
                 {contact.callToAction}
               </h2>
               <p className="font-body text-base leading-relaxed text-gray-600">
-                Acompanhe novidades no Instagram ou envie um e-mail para alinharmos uma
-                imersão com seu time ou sua escola.
+                Mande um e-mail ou fale com a gente pelo Instagram.
               </p>
             </div>
             <div className="flex flex-col gap-3">

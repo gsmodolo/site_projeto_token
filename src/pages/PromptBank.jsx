@@ -16,20 +16,20 @@ const ALL_PROMPTS = [...promptsEstudos, ...promptsVestibulares];
 const datasets = {
   [TAB_ESTUDOS]: {
     label: "Estudos",
-    headline: "Prompts para destravar o estudo do dia a dia",
+    headline: "Prompts para o dia a dia de estudo",
     helper:
-      "Toque nos campos destacados para completar com o seu contexto e abra direto na IA, ou copie e cole no seu LLM favorito."
+      "Toque nas partes destacadas para preencher com a sua matéria e o seu caso. Depois é só copiar ou abrir direto na IA."
   },
   [TAB_VESTIBULARES]: {
     label: "Vestibulares",
-    headline: "Prompts focados em vestibular e provas de seleção",
+    headline: "Prompts para vestibular e ENEM",
     helper:
-      "Construídos para simular bancas, corrigir redações e organizar o tempo de prova com inteligência."
+      "Para treinar questões, corrigir redação e organizar a reta final."
   },
   [TAB_FAVORITOS]: {
     label: "★ Favoritos",
     headline: "Seus prompts favoritos",
-    helper: "Toque na estrela de um prompt para guardá-lo aqui. Os favoritos ficam salvos neste navegador."
+    helper: "Toque na estrela de um prompt para guardar ele aqui. Os favoritos ficam salvos só neste navegador."
   }
 };
 
